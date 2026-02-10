@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeatStars Icons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    :root {
+      --bg: #0C0C0E;
+      --bg-raised: #151518;
+      --bg-hover: #1C1C21;
+      --bg-active: #24242B;
+      --border: #2A2A33;
+      --border-subtle: #1E1E26;
+      --text: #EDEDEF;
+      --text-secondary: #8E8E9A;
+      --text-tertiary: #5C5C6A;
+      --accent: #FF5500;
+      --accent-dim: #FF550022;
+      --accent-glow: #FF550044;
+      --success: #34D399;
+      --font-body: 'DM Sans', -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --radius: 10px;
+      --radius-sm: 6px;
+    }
+
+    html { 
+      font-size: 15px;
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---- HEADER ---- */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(12, 12, 14, 0.85);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .logo-mark {
+      width: 28px;
+      height: 28px;
+      background: var(--accent);
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-mark svg { width: 16px; height: 16px; }
+
+    .logo-text {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .logo-text span { 
+      color: var(--text-tertiary); 
+      font-weight: 400;
+    }
+
+    .search-wrapper {
+      flex: 1;
+      max-width: 480px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-tertiary);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-raised);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 0.93rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .search-input::placeholder { color: var(--text-tertiary); }
+    
+    .search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-dim);
+    }
+
+    .icon-count {
+      font-size: 0.85rem;
+      color: var(--text-tertiary);
+      flex-shrink: 0;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .icon-count strong {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    /* ---- SIZE CONTROLS ---- */
+    .controls-bar {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 16px 32px 0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .size-toggle {
+      display: flex;
+      background: var(--bg-raised);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+
+    .size-btn {
+      padding: 6px 14px;
+      background: none;
+      border: none;
+      color: var(--text-tertiary);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .size-btn:hover { color: var(--text-secondary); }
+    
+    .size-btn.active {
+      background: var(--bg-active);
+      color: var(--text);
+    }
+
+    .size-btn + .size-btn { border-left: 1px solid var(--border); }
+
+    /* ---- GRID ---- */
+    .main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 24px 32px 64px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 2px;
+    }
+
+    .grid.grid-compact {
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+
+    .grid.grid-large {
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+    .icon-card {
+      aspect-ratio: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 8px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+      position: relative;
+    }
+
+    .icon-card:hover {
+      background: var(--bg-hover);
+    }
+
+    .icon-card:active {
+      transform: scale(0.97);
+    }
+
+    .icon-card.selected {
+      background: var(--accent-dim);
+      outline: 2px solid var(--accent);
+      outline-offset: -2px;
+    }
+
+    .icon-card svg {
+      color: var(--text);
+      flex-shrink: 0;
+      transition: color 0.15s;
+    }
+
+    .icon-card:hover svg { color: var(--accent); }
+
+    .icon-card .icon-name {
+      font-size: 0.65rem;
+      color: var(--text-tertiary);
+      text-align: center;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      line-height: 1.3;
+    }
+
+    .icon-card .copied-toast {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: var(--success);
+      color: #000;
+      font-size: 0.6rem;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 4px;
+      opacity: 0;
+      transform: translateY(4px);
+      transition: all 0.2s;
+      pointer-events: none;
+    }
+
+    .icon-card .copied-toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ---- DETAIL PANEL ---- */
+    .panel-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 200;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+
+    .panel-overlay.open { opacity: 1; pointer-events: all; }
+
+    .detail-panel {
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: min(420px, 90vw);
+      background: var(--bg-raised);
+      border-left: 1px solid var(--border);
+      z-index: 201;
+      transform: translateX(100%);
+      transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    .detail-panel.open { transform: translateX(0); }
+
+    .panel-header {
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .panel-title {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .panel-close {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .panel-close:hover { color: var(--text); border-color: var(--text-tertiary); }
+
+    .panel-preview {
+      padding: 48px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .panel-preview svg { color: var(--text); }
+
+    .panel-section {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .panel-section:last-child { border-bottom: none; }
+
+    .panel-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-tertiary);
+      margin-bottom: 10px;
+    }
+
+    .code-block {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text);
+      line-height: 1.6;
+      position: relative;
+      cursor: pointer;
+      transition: border-color 0.15s;
+      overflow-x: auto;
+      white-space: pre;
+    }
+
+    .code-block:hover {
+      border-color: var(--text-tertiary);
+    }
+
+    .code-block .copy-hint {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      font-family: var(--font-body);
+      font-size: 0.65rem;
+      color: var(--text-tertiary);
+      background: var(--bg-raised);
+      padding: 2px 8px;
+      border-radius: 4px;
+      opacity: 0;
+      transition: opacity 0.15s;
+    }
+
+    .code-block:hover .copy-hint { opacity: 1; }
+
+    .code-block.copied {
+      border-color: var(--success);
+    }
+
+    .code-block.copied .copy-hint {
+      opacity: 1;
+      color: var(--success);
+    }
+
+    .panel-sizes {
+      display: flex;
+      gap: 24px;
+      align-items: flex-end;
+    }
+
+    .panel-size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .panel-size-label {
+      font-size: 0.7rem;
+      color: var(--text-tertiary);
+      font-family: var(--font-mono);
+    }
+
+    .panel-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+      border: none;
+      flex: 1;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-primary:hover { filter: brightness(1.1); }
+
+    .btn-secondary {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .btn-secondary:hover { border-color: var(--text-tertiary); }
+
+    /* ---- EMPTY STATE ---- */
+    .empty-state {
+      grid-column: 1 / -1;
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    .empty-state svg {
+      color: var(--text-tertiary);
+      margin-bottom: 16px;
+      opacity: 0.5;
+    }
+
+    .empty-state p {
+      color: var(--text-tertiary);
+      font-size: 0.95rem;
+    }
+
+    .empty-state .hint {
+      margin-top: 8px;
+      font-size: 0.8rem;
+      color: var(--text-tertiary);
+      opacity: 0.6;
+    }
+
+    /* ---- KEYBOARD SHORTCUT HINTS ---- */
+    kbd {
+      display: inline-block;
+      padding: 2px 6px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-tertiary);
+      line-height: 1.4;
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 640px) {
+      .header-inner { padding: 12px 16px; }
+      .main { padding: 16px; }
+      .controls-bar { padding: 12px 16px 0; }
+      .grid { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); }
+      .icon-count { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a class="logo" href="#">
+        <div class="logo-mark">
+          <svg viewBox="0 0 16 16" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round">
+            <circle cx="8" cy="8" r="3" /><path d="M8 2v2M8 12v2M2 8h2M12 8h2" />
+          </svg>
+        </div>
+        <div class="logo-text">BeatStars <span>Icons</span></div>
+      </a>
+
+      <div class="search-wrapper">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+        </svg>
+        <input 
+          type="text" 
+          class="search-input" 
+          id="search" 
+          placeholder="Search icons…" 
+          spellcheck="false"
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="icon-count">
+        <strong id="visible-count">0</strong> <span id="count-label">icons</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="controls-bar">
+    <div class="size-toggle">
+      <button class="size-btn" data-size="compact" title="Compact grid">S</button>
+      <button class="size-btn active" data-size="default" title="Default grid">M</button>
+      <button class="size-btn" data-size="large" title="Large grid">L</button>
+    </div>
+  </div>
+
+  <main class="main">
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <!-- Detail Panel -->
+  <div class="panel-overlay" id="panel-overlay"></div>
+  <div class="detail-panel" id="detail-panel">
+    <div class="panel-header">
+      <div class="panel-title" id="panel-name">—</div>
+      <button class="panel-close" id="panel-close" title="Close (Esc)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="panel-preview" id="panel-preview"></div>
+    <div class="panel-section">
+      <div class="panel-label">Sizes</div>
+      <div class="panel-sizes" id="panel-sizes"></div>
+    </div>
+    <div class="panel-section">
+      <div class="panel-label">Import</div>
+      <div class="code-block" id="panel-import" onclick="copyCode(this)">
+        <span class="copy-hint">Click to copy</span>
+      </div>
+    </div>
+    <div class="panel-section">
+      <div class="panel-label">Usage</div>
+      <div class="code-block" id="panel-usage" onclick="copyCode(this)">
+        <span class="copy-hint">Click to copy</span>
+      </div>
+    </div>
+    <div class="panel-section">
+      <div class="panel-label">Actions</div>
+      <div class="panel-actions">
+        <button class="btn btn-primary" id="btn-copy-import">Copy Import</button>
+        <button class="btn btn-secondary" id="btn-copy-svg">Copy SVG</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- This script is auto-generated by `npm run build:catalog-data` -->
+  <script src="catalog-data.js"></script>
+
+  <!-- Fallback: demo icons if catalog-data.js hasn't been generated yet -->
+  <script>
+    if (!window.BEATSTARS_ICONS) {
+      window.BEATSTARS_ICONS = [
+        {
+          name: 'PlayIcon', fileName: 'play', kebab: 'play',
+          tags: ['play', 'start', 'media', 'audio', 'video'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>',
+          importStatement: "import { PlayIcon } from '@beatstars/icons';",
+          jsxUsage: '<PlayIcon size={24} />'
+        },
+        {
+          name: 'PauseIcon', fileName: 'pause', kebab: 'pause',
+          tags: ['pause', 'stop', 'media', 'halt'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>',
+          importStatement: "import { PauseIcon } from '@beatstars/icons';",
+          jsxUsage: '<PauseIcon size={24} />'
+        },
+        {
+          name: 'SkipForwardIcon', fileName: 'skip-forward', kebab: 'skip-forward',
+          tags: ['skip', 'forward', 'next', 'media'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg>',
+          importStatement: "import { SkipForwardIcon } from '@beatstars/icons';",
+          jsxUsage: '<SkipForwardIcon size={24} />'
+        },
+        {
+          name: 'SkipBackIcon', fileName: 'skip-back', kebab: 'skip-back',
+          tags: ['skip', 'back', 'previous', 'media'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg>',
+          importStatement: "import { SkipBackIcon } from '@beatstars/icons';",
+          jsxUsage: '<SkipBackIcon size={24} />'
+        },
+        {
+          name: 'VolumeIcon', fileName: 'volume', kebab: 'volume',
+          tags: ['volume', 'sound', 'speaker', 'audio'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>',
+          importStatement: "import { VolumeIcon } from '@beatstars/icons';",
+          jsxUsage: '<VolumeIcon size={24} />'
+        },
+        {
+          name: 'MicIcon', fileName: 'mic', kebab: 'mic',
+          tags: ['mic', 'microphone', 'record', 'voice', 'audio'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>',
+          importStatement: "import { MicIcon } from '@beatstars/icons';",
+          jsxUsage: '<MicIcon size={24} />'
+        },
+        {
+          name: 'HeadphonesIcon', fileName: 'headphones', kebab: 'headphones',
+          tags: ['headphones', 'music', 'listen', 'audio'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>',
+          importStatement: "import { HeadphonesIcon } from '@beatstars/icons';",
+          jsxUsage: '<HeadphonesIcon size={24} />'
+        },
+        {
+          name: 'MusicIcon', fileName: 'music', kebab: 'music',
+          tags: ['music', 'note', 'song', 'audio'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>',
+          importStatement: "import { MusicIcon } from '@beatstars/icons';",
+          jsxUsage: '<MusicIcon size={24} />'
+        },
+        {
+          name: 'DiscIcon', fileName: 'disc', kebab: 'disc',
+          tags: ['disc', 'vinyl', 'record', 'music'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>',
+          importStatement: "import { DiscIcon } from '@beatstars/icons';",
+          jsxUsage: '<DiscIcon size={24} />'
+        },
+        {
+          name: 'HeartIcon', fileName: 'heart', kebab: 'heart',
+          tags: ['heart', 'like', 'favorite', 'love'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>',
+          importStatement: "import { HeartIcon } from '@beatstars/icons';",
+          jsxUsage: '<HeartIcon size={24} />'
+        },
+        {
+          name: 'DownloadIcon', fileName: 'download', kebab: 'download',
+          tags: ['download', 'save', 'export', 'get'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
+          importStatement: "import { DownloadIcon } from '@beatstars/icons';",
+          jsxUsage: '<DownloadIcon size={24} />'
+        },
+        {
+          name: 'UploadIcon', fileName: 'upload', kebab: 'upload',
+          tags: ['upload', 'import', 'send', 'share'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>',
+          importStatement: "import { UploadIcon } from '@beatstars/icons';",
+          jsxUsage: '<UploadIcon size={24} />'
+        },
+        {
+          name: 'SearchIcon', fileName: 'search', kebab: 'search',
+          tags: ['search', 'find', 'lookup', 'magnify'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>',
+          importStatement: "import { SearchIcon } from '@beatstars/icons';",
+          jsxUsage: '<SearchIcon size={24} />'
+        },
+        {
+          name: 'UserIcon', fileName: 'user', kebab: 'user',
+          tags: ['user', 'person', 'profile', 'account'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
+          importStatement: "import { UserIcon } from '@beatstars/icons';",
+          jsxUsage: '<UserIcon size={24} />'
+        },
+        {
+          name: 'CartIcon', fileName: 'cart', kebab: 'cart',
+          tags: ['cart', 'shop', 'buy', 'purchase', 'basket'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>',
+          importStatement: "import { CartIcon } from '@beatstars/icons';",
+          jsxUsage: '<CartIcon size={24} />'
+        },
+        {
+          name: 'ShareIcon', fileName: 'share', kebab: 'share',
+          tags: ['share', 'social', 'send', 'forward'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>',
+          importStatement: "import { ShareIcon } from '@beatstars/icons';",
+          jsxUsage: '<ShareIcon size={24} />'
+        },
+        {
+          name: 'SettingsIcon', fileName: 'settings', kebab: 'settings',
+          tags: ['settings', 'gear', 'cog', 'preferences', 'config'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>',
+          importStatement: "import { SettingsIcon } from '@beatstars/icons';",
+          jsxUsage: '<SettingsIcon size={24} />'
+        },
+        {
+          name: 'BellIcon', fileName: 'bell', kebab: 'bell',
+          tags: ['bell', 'notification', 'alert', 'ring'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>',
+          importStatement: "import { BellIcon } from '@beatstars/icons';",
+          jsxUsage: '<BellIcon size={24} />'
+        },
+        {
+          name: 'StarIcon', fileName: 'star', kebab: 'star',
+          tags: ['star', 'favorite', 'rating', 'review'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',
+          importStatement: "import { StarIcon } from '@beatstars/icons';",
+          jsxUsage: '<StarIcon size={24} />'
+        },
+        {
+          name: 'SlidersIcon', fileName: 'sliders', kebab: 'sliders',
+          tags: ['sliders', 'equalizer', 'eq', 'mixer', 'adjust'],
+          svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>',
+          importStatement: "import { SlidersIcon } from '@beatstars/icons';",
+          jsxUsage: '<SlidersIcon size={24} />'
+        },
+      ];
+    }
+  </script>
+
+  <script>
+    // ---- State ----
+    let icons = window.BEATSTARS_ICONS || [];
+    let filteredIcons = [...icons];
+    let selectedIcon = null;
+    let gridSize = 'default'; // compact | default | large
+    let displaySize = 24;
+
+    // ---- DOM refs ----
+    const grid = document.getElementById('grid');
+    const search = document.getElementById('search');
+    const visibleCount = document.getElementById('visible-count');
+    const countLabel = document.getElementById('count-label');
+    const panelOverlay = document.getElementById('panel-overlay');
+    const detailPanel = document.getElementById('detail-panel');
+    const panelName = document.getElementById('panel-name');
+    const panelPreview = document.getElementById('panel-preview');
+    const panelSizes = document.getElementById('panel-sizes');
+    const panelImport = document.getElementById('panel-import');
+    const panelUsage = document.getElementById('panel-usage');
+    const panelClose = document.getElementById('panel-close');
+    const btnCopyImport = document.getElementById('btn-copy-import');
+    const btnCopySvg = document.getElementById('btn-copy-svg');
+
+    // ---- Render Grid ----
+    function renderGrid() {
+      if (filteredIcons.length === 0) {
+        grid.innerHTML = `
+          <div class="empty-state">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <p>No icons match your search</p>
+            <p class="hint">Try a different term or browse all icons</p>
+          </div>
+        `;
+      } else {
+        grid.innerHTML = filteredIcons.map((icon, i) => `
+          <div class="icon-card ${selectedIcon === icon ? 'selected' : ''}" 
+               data-index="${i}" 
+               onclick="selectIcon(${i})"
+               title="${icon.name}">
+            <div style="width:${displaySize}px;height:${displaySize}px;">${scaleSvg(icon.svg, displaySize)}</div>
+            <span class="icon-name">${icon.fileName}</span>
+            <span class="copied-toast" id="toast-${i}">Copied!</span>
+          </div>
+        `).join('');
+      }
+
+      visibleCount.textContent = filteredIcons.length;
+      countLabel.textContent = filteredIcons.length === 1 ? 'icon' : 'icons';
+    }
+
+    function scaleSvg(svg, size) {
+      return svg
+        .replace(/width="[^"]*"/, `width="${size}"`)
+        .replace(/height="[^"]*"/, `height="${size}"`)
+        .replace(/<svg(?!.*width)/, `<svg width="${size}" height="${size}"`);
+    }
+
+    // ---- Search ----
+    function filterIcons(query) {
+      const q = query.toLowerCase().trim();
+      if (!q) {
+        filteredIcons = [...icons];
+      } else {
+        const terms = q.split(/\s+/);
+        filteredIcons = icons.filter((icon) => {
+          const searchable = [icon.name, icon.fileName, ...icon.tags].join(' ').toLowerCase();
+          return terms.every((term) => searchable.includes(term));
+        });
+      }
+      renderGrid();
+    }
+
+    search.addEventListener('input', (e) => filterIcons(e.target.value));
+
+    // ---- Size Toggle ----
+    document.querySelectorAll('.size-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.size-btn').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        gridSize = btn.dataset.size;
+        grid.className = 'grid' + (gridSize === 'compact' ? ' grid-compact' : gridSize === 'large' ? ' grid-large' : '');
+
+        displaySize = gridSize === 'compact' ? 18 : gridSize === 'large' ? 32 : 24;
+        renderGrid();
+      });
+    });
+
+    // ---- Detail Panel ----
+    function selectIcon(index) {
+      selectedIcon = filteredIcons[index];
+      openPanel();
+      renderGrid();
+    }
+
+    function openPanel() {
+      if (!selectedIcon) return;
+
+      panelName.textContent = selectedIcon.name;
+
+      // Preview at large size
+      panelPreview.innerHTML = scaleSvg(selectedIcon.svg, 64);
+
+      // Size previews
+      panelSizes.innerHTML = [16, 20, 24, 32, 48].map((s) => `
+        <div class="panel-size-item">
+          <div style="width:${s}px;height:${s}px;">${scaleSvg(selectedIcon.svg, s)}</div>
+          <span class="panel-size-label">${s}</span>
+        </div>
+      `).join('');
+
+      // Code snippets
+      panelImport.innerHTML = `<span class="copy-hint">Click to copy</span>${escHtml(selectedIcon.importStatement)}`;
+      panelUsage.innerHTML = `<span class="copy-hint">Click to copy</span>${escHtml(selectedIcon.jsxUsage)}`;
+
+      panelOverlay.classList.add('open');
+      detailPanel.classList.add('open');
+    }
+
+    function closePanel() {
+      panelOverlay.classList.remove('open');
+      detailPanel.classList.remove('open');
+      selectedIcon = null;
+      renderGrid();
+    }
+
+    panelOverlay.addEventListener('click', closePanel);
+    panelClose.addEventListener('click', closePanel);
+
+    // Copy buttons
+    btnCopyImport.addEventListener('click', () => {
+      if (selectedIcon) copyToClipboard(selectedIcon.importStatement, btnCopyImport);
+    });
+
+    btnCopySvg.addEventListener('click', () => {
+      if (selectedIcon) copyToClipboard(selectedIcon.svg, btnCopySvg);
+    });
+
+    // ---- Clipboard ----
+    async function copyToClipboard(text, feedbackEl) {
+      try {
+        await navigator.clipboard.writeText(text);
+        if (feedbackEl) {
+          const orig = feedbackEl.textContent;
+          feedbackEl.textContent = 'Copied!';
+          feedbackEl.style.borderColor = 'var(--success)';
+          setTimeout(() => {
+            feedbackEl.textContent = orig;
+            feedbackEl.style.borderColor = '';
+          }, 1500);
+        }
+      } catch { /* fallback */ }
+    }
+
+    function copyCode(el) {
+      const text = el.textContent.replace('Click to copy', '').trim();
+      navigator.clipboard.writeText(text).then(() => {
+        el.classList.add('copied');
+        const hint = el.querySelector('.copy-hint');
+        if (hint) hint.textContent = 'Copied!';
+        setTimeout(() => {
+          el.classList.remove('copied');
+          if (hint) hint.textContent = 'Click to copy';
+        }, 1500);
+      });
+    }
+
+    function escHtml(str) {
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    // ---- Keyboard shortcuts ----
+    document.addEventListener('keydown', (e) => {
+      // Esc to close panel
+      if (e.key === 'Escape') closePanel();
+
+      // / to focus search
+      if (e.key === '/' && document.activeElement !== search) {
+        e.preventDefault();
+        search.focus();
+      }
+    });
+
+    // ---- Init ----
+    renderGrid();
+  </script>
+</body>
+</html>
