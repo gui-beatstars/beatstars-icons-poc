@@ -37,7 +37,7 @@ const BaseIconMoonIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M21 13.39A7.61 7.61 0 1 1 10.61 3 9.52 9.52 0 1 0 21 13.39" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M21 13.39A7.617 7.617 0 1 1 10.612 3C5.78 3.458 2 7.527 2 12.479A9.52 9.52 0 0 0 11.522 22c4.95 0 9.02-3.78 9.478-8.61" })
     }
   )
 );

@@ -15,7 +15,7 @@ const BaseIconDropIcon = forwardRef<SVGSVGElement, IconProps>(
       style={style}
       {...rest}
     >
-      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 14a8 8 0 1 1-15.42-3C5.77 8.07 12 2 12 2s6.23 6.07 7.42 9q.57 1.4.58 3"/>
+      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 14a8 8 0 1 1-15.418-3C5.768 8.068 12 2 12 2s6.232 6.068 7.419 9A8 8 0 0 1 20 14"/>
     </svg>
   )
 );

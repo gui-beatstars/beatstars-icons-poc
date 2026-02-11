@@ -14,7 +14,7 @@ const BaseIconCurrencyEuroIcon = forwardRef(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M19 5.52a8.5 8.5 0 1 0 0 12.96M3 14h10M3 10h10" })
+      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M19 5.519a8.5 8.5 0 1 0 0 12.962M3 14h10M3 10h10" })
     }
   )
 );

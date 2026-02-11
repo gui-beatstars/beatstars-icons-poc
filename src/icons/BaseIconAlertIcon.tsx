@@ -15,7 +15,7 @@ const BaseIconAlertIcon = forwardRef<SVGSVGElement, IconProps>(
       style={style}
       {...rest}
     >
-      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12.01 9.02v4m9.71 5-8-14a2 2 0 0 0-3.47 0l-8 14a2 2 0 0 0 1.76 3H20a2 2 0 0 0 1.73-3"/>
+      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v4m0 4h.01m8.215 3.5H4.248c-.903 0-1.354 0-1.617-.19a1 1 0 0 1-.408-.7c-.035-.322.188-.715.633-1.5l7.752-13.658c.456-.803.684-1.204.983-1.338a1 1 0 0 1 .818 0c.3.134.527.535.982 1.338l7.986 14.07c.24.422.36.633.39.802a1 1 0 0 1-.652 1.12c-.161.056-.404.056-.89.056"/>
     </svg>
   )
 );

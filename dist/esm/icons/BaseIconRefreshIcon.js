@@ -14,7 +14,7 @@ const BaseIconRefreshIcon = forwardRef(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M17 18.87A8.49 8.49 0 0 0 12 3.5h-.5m.5 17A8.5 8.5 0 0 1 7 5.13m4 17.27 2-2-2-2m2-12.8-2-2 2-2" })
+      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M17 18.875A8.5 8.5 0 0 0 12 3.5h-.5m.5 17A8.5 8.5 0 0 1 7 5.125M11 22.4l2-2-2-2m2-12.8-2-2 2-2" })
     }
   )
 );

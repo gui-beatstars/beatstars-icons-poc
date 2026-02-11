@@ -37,7 +37,7 @@ const BaseIconBlockedIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M19.07 4.93A10 10 0 0 1 4.93 19.07M19.07 4.93A10 10 0 0 0 4.93 19.07M19.07 4.93 4.93 19.07" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M19.071 4.929c3.905 3.905 3.905 10.237 0 14.142s-10.237 3.905-14.142 0M19.07 4.93c-3.905-3.905-10.237-3.905-14.142 0s-3.905 10.237 0 14.142M19.07 4.93 4.93 19.07" })
     }
   )
 );

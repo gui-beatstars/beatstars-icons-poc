@@ -14,7 +14,7 @@ const BaseIconUserIdIcon = forwardRef(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M15 11h4m-1 3.5h-3m-3 3.54a3.1 3.1 0 0 0-2.87-1.95H7.87A3.1 3.1 0 0 0 5 18.04M10 5H4.04C2.91 5 2 5.91 2 7.04V19c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-6m-4.09 5.18A2 2 0 1 1 7.1 13a2 2 0 0 1 2.82-2.83M13 7h-2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1" })
+      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M15 11h4m-1 3.5h-3m-3 3.541a3.09 3.09 0 0 0-2.871-1.948H7.871A3.09 3.09 0 0 0 5 18.041M10 5H4.041A2.04 2.04 0 0 0 2 7.041V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-6m-4.086 5.179a2 2 0 1 1-2.828 2.828 2 2 0 0 1 2.828-2.828M13 7h-2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1" })
     }
   )
 );

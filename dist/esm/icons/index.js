@@ -163,101 +163,97 @@ import { default as default163 } from "./BaseIconMyContentIcon";
 import { default as default164 } from "./BaseIconNotePaperIcon";
 import { default as default165 } from "./BaseIconNotificationBoxIcon";
 import { default as default166 } from "./BaseIconPaintRoller01Icon";
-import { default as default167 } from "./BaseIconPanelLeftCloseIcon";
-import { default as default168 } from "./BaseIconPanelLeftOpenIcon";
-import { default as default169 } from "./BaseIconPanelRightCloseIcon";
-import { default as default170 } from "./BaseIconPanelRightOpenIcon";
-import { default as default171 } from "./BaseIconPenIcon";
-import { default as default172 } from "./BaseIconPercentCircleIcon";
-import { default as default173 } from "./BaseIconPercentIcon";
-import { default as default174 } from "./BaseIconPinIcon";
-import { default as default175 } from "./BaseIconPixIcon";
-import { default as default176 } from "./BaseIconPlayerPauseIcon";
-import { default as default177 } from "./BaseIconPlayerPlayIcon";
-import { default as default178 } from "./BaseIconPlaylistIcon";
-import { default as default179 } from "./BaseIconPlusAddIcon";
-import { default as default180 } from "./BaseIconPlusCircleIcon";
-import { default as default181 } from "./BaseIconPowerIcon";
-import { default as default182 } from "./BaseIconPrinterIcon";
-import { default as default183 } from "./BaseIconPromoteArrowIcon";
-import { default as default184 } from "./BaseIconQueueIcon";
-import { default as default185 } from "./BaseIconRadioIcon";
-import { default as default186 } from "./BaseIconRatio12Icon";
-import { default as default187 } from "./BaseIconRatio21Icon";
-import { default as default188 } from "./BaseIconRatioSquareIcon";
-import { default as default189 } from "./BaseIconRefreshIcon";
-import { default as default190 } from "./BaseIconReloadRefreshIcon";
-import { default as default191 } from "./BaseIconReorderIcon";
-import { default as default192 } from "./BaseIconRepeatOffIcon";
-import { default as default193 } from "./BaseIconRepeatOnIcon";
-import { default as default194 } from "./BaseIconRepeatOneIcon";
-import { default as default195 } from "./BaseIconReplaceIcon";
-import { default as default196 } from "./BaseIconRepostIcon";
-import { default as default197 } from "./BaseIconRocketIcon";
-import { default as default198 } from "./BaseIconRotateLeftIcon";
-import { default as default199 } from "./BaseIconSale01Icon";
-import { default as default200 } from "./BaseIconSalesIcon";
-import { default as default201 } from "./BaseIconSaveIcon";
-import { default as default202 } from "./BaseIconScale01Icon";
-import { default as default203 } from "./BaseIconScanRightsIcon";
-import { default as default204 } from "./BaseIconScanIcon";
-import { default as default205 } from "./BaseIconSearchIcon";
-import { default as default206 } from "./BaseIconSend01Icon";
-import { default as default207 } from "./BaseIconSend02Icon";
-import { default as default208 } from "./BaseIconServicesIcon";
-import { default as default209 } from "./BaseIconSettingsIcon";
-import { default as default210 } from "./BaseIconShareAndroidIcon";
-import { default as default211 } from "./BaseIconShareExternalOpenIcon";
-import { default as default212 } from "./BaseIconShieldPrivacyIcon";
-import { default as default213 } from "./BaseIconShoppingBag01Icon";
-import { default as default214 } from "./BaseIconShoppingBagAddIcon";
-import { default as default215 } from "./BaseIconShoppingBagRemoveIcon";
-import { default as default216 } from "./BaseIconShuffleOffIcon";
-import { default as default217 } from "./BaseIconShuffleOnIcon";
-import { default as default218 } from "./BaseIconSignalStreamIcon";
-import { default as default219 } from "./BaseIconSimilarIcon";
-import { default as default220 } from "./BaseIconSkipBackIcon";
-import { default as default221 } from "./BaseIconSkipForwardIcon";
-import { default as default222 } from "./BaseIconSliders01Icon";
-import { default as default223 } from "./BaseIconSliders02Icon";
-import { default as default224 } from "./BaseIconSnowflake01Icon";
-import { default as default225 } from "./BaseIconSortIcon";
-import { default as default226 } from "./BaseIconSoundKitIcon";
-import { default as default227 } from "./BaseIconStar02Icon";
-import { default as default228 } from "./BaseIconStarMinusIcon";
-import { default as default229 } from "./BaseIconStarIcon";
-import { default as default230 } from "./BaseIconStore01Icon";
-import { default as default231 } from "./BaseIconSunIcon";
-import { default as default232 } from "./BaseIconTag01Icon";
-import { default as default233 } from "./BaseIconTagPriceIcon";
-import { default as default234 } from "./BaseIconTargetIcon";
-import { default as default235 } from "./BaseIconTextInputIcon";
-import { default as default236 } from "./BaseIconThumbsUpIcon";
-import { default as default237 } from "./BaseIconTicketDiscountIcon";
-import { default as default238 } from "./BaseIconToggleOffIcon";
-import { default as default239 } from "./BaseIconToggleOnIcon";
-import { default as default240 } from "./BaseIconTracklistIcon";
-import { default as default241 } from "./BaseIconTransaction01Icon";
-import { default as default242 } from "./BaseIconTranslate01Icon";
-import { default as default243 } from "./BaseIconTypeTextIcon";
-import { default as default244 } from "./BaseIconUnlistedIcon";
-import { default as default245 } from "./BaseIconUnlocked01Icon";
-import { default as default246 } from "./BaseIconUnlocked02Icon";
-import { default as default247 } from "./BaseIconUploadIcon";
-import { default as default248 } from "./BaseIconUser01Icon";
-import { default as default249 } from "./BaseIconUserCircleIcon";
-import { default as default250 } from "./BaseIconUserIdIcon";
-import { default as default251 } from "./BaseIconUserInfoIcon";
-import { default as default252 } from "./BaseIconUserUnfollowIcon";
-import { default as default253 } from "./BaseIconUsers01Icon";
-import { default as default254 } from "./BaseIconUsers02Icon";
-import { default as default255 } from "./BaseIconVideoRecorderIcon";
-import { default as default256 } from "./BaseIconVideoStreamIcon";
-import { default as default257 } from "./BaseIconVoloco01Icon";
-import { default as default258 } from "./BaseIconWalletMusicIcon";
-import { default as default259 } from "./BaseIconWalletIcon";
-import { default as default260 } from "./BaseIconZoomInIcon";
-import { default as default261 } from "./BaseIconZoomOutIcon";
+import { default as default167 } from "./BaseIconPenIcon";
+import { default as default168 } from "./BaseIconPercentCircleIcon";
+import { default as default169 } from "./BaseIconPercentIcon";
+import { default as default170 } from "./BaseIconPinIcon";
+import { default as default171 } from "./BaseIconPixIcon";
+import { default as default172 } from "./BaseIconPlayerPauseIcon";
+import { default as default173 } from "./BaseIconPlayerPlayIcon";
+import { default as default174 } from "./BaseIconPlaylistIcon";
+import { default as default175 } from "./BaseIconPlusAddIcon";
+import { default as default176 } from "./BaseIconPlusCircleIcon";
+import { default as default177 } from "./BaseIconPowerIcon";
+import { default as default178 } from "./BaseIconPrinterIcon";
+import { default as default179 } from "./BaseIconPromoteArrowIcon";
+import { default as default180 } from "./BaseIconQueueIcon";
+import { default as default181 } from "./BaseIconRadioIcon";
+import { default as default182 } from "./BaseIconRatio12Icon";
+import { default as default183 } from "./BaseIconRatio21Icon";
+import { default as default184 } from "./BaseIconRatioSquareIcon";
+import { default as default185 } from "./BaseIconRefreshIcon";
+import { default as default186 } from "./BaseIconReloadRefreshIcon";
+import { default as default187 } from "./BaseIconReorderIcon";
+import { default as default188 } from "./BaseIconRepeatOffIcon";
+import { default as default189 } from "./BaseIconRepeatOnIcon";
+import { default as default190 } from "./BaseIconRepeatOneIcon";
+import { default as default191 } from "./BaseIconReplaceIcon";
+import { default as default192 } from "./BaseIconRepostIcon";
+import { default as default193 } from "./BaseIconRocketIcon";
+import { default as default194 } from "./BaseIconRotateLeftIcon";
+import { default as default195 } from "./BaseIconSale01Icon";
+import { default as default196 } from "./BaseIconSalesIcon";
+import { default as default197 } from "./BaseIconSaveIcon";
+import { default as default198 } from "./BaseIconScale01Icon";
+import { default as default199 } from "./BaseIconScanRightsIcon";
+import { default as default200 } from "./BaseIconScanIcon";
+import { default as default201 } from "./BaseIconSearchIcon";
+import { default as default202 } from "./BaseIconSend01Icon";
+import { default as default203 } from "./BaseIconSend02Icon";
+import { default as default204 } from "./BaseIconServicesIcon";
+import { default as default205 } from "./BaseIconSettingsIcon";
+import { default as default206 } from "./BaseIconShareAndroidIcon";
+import { default as default207 } from "./BaseIconShareExternalOpenIcon";
+import { default as default208 } from "./BaseIconShieldPrivacyIcon";
+import { default as default209 } from "./BaseIconShoppingBag01Icon";
+import { default as default210 } from "./BaseIconShoppingBagAddIcon";
+import { default as default211 } from "./BaseIconShoppingBagRemoveIcon";
+import { default as default212 } from "./BaseIconShuffleOffIcon";
+import { default as default213 } from "./BaseIconShuffleOnIcon";
+import { default as default214 } from "./BaseIconSignalStreamIcon";
+import { default as default215 } from "./BaseIconSimilarIcon";
+import { default as default216 } from "./BaseIconSkipBackIcon";
+import { default as default217 } from "./BaseIconSkipForwardIcon";
+import { default as default218 } from "./BaseIconSliders01Icon";
+import { default as default219 } from "./BaseIconSliders02Icon";
+import { default as default220 } from "./BaseIconSnowflake01Icon";
+import { default as default221 } from "./BaseIconSortIcon";
+import { default as default222 } from "./BaseIconSoundKitIcon";
+import { default as default223 } from "./BaseIconStar02Icon";
+import { default as default224 } from "./BaseIconStarMinusIcon";
+import { default as default225 } from "./BaseIconStarIcon";
+import { default as default226 } from "./BaseIconStore01Icon";
+import { default as default227 } from "./BaseIconSunIcon";
+import { default as default228 } from "./BaseIconTag01Icon";
+import { default as default229 } from "./BaseIconTagPriceIcon";
+import { default as default230 } from "./BaseIconTargetIcon";
+import { default as default231 } from "./BaseIconTextInputIcon";
+import { default as default232 } from "./BaseIconThumbsUpIcon";
+import { default as default233 } from "./BaseIconTicketDiscountIcon";
+import { default as default234 } from "./BaseIconToggleOffIcon";
+import { default as default235 } from "./BaseIconToggleOnIcon";
+import { default as default236 } from "./BaseIconTracklistIcon";
+import { default as default237 } from "./BaseIconTransaction01Icon";
+import { default as default238 } from "./BaseIconTranslate01Icon";
+import { default as default239 } from "./BaseIconTypeTextIcon";
+import { default as default240 } from "./BaseIconUnlistedIcon";
+import { default as default241 } from "./BaseIconUnlocked01Icon";
+import { default as default242 } from "./BaseIconUnlocked02Icon";
+import { default as default243 } from "./BaseIconUploadIcon";
+import { default as default244 } from "./BaseIconUser01Icon";
+import { default as default245 } from "./BaseIconUserCircleIcon";
+import { default as default246 } from "./BaseIconUserIdIcon";
+import { default as default247 } from "./BaseIconUserInfoIcon";
+import { default as default248 } from "./BaseIconUserUnfollowIcon";
+import { default as default249 } from "./BaseIconUsers01Icon";
+import { default as default250 } from "./BaseIconUsers02Icon";
+import { default as default251 } from "./BaseIconVideoRecorderIcon";
+import { default as default252 } from "./BaseIconVideoStreamIcon";
+import { default as default253 } from "./BaseIconVoloco01Icon";
+import { default as default254 } from "./BaseIconWalletMusicIcon";
+import { default as default255 } from "./BaseIconWalletIcon";
+import { default as default256 } from "./BaseIconZoomInIcon";
+import { default as default257 } from "./BaseIconZoomOutIcon";
 export {
   default2 as BaseIconAddToListIcon,
   default3 as BaseIconAlarmClockIcon,
@@ -424,99 +420,95 @@ export {
   default164 as BaseIconNotePaperIcon,
   default165 as BaseIconNotificationBoxIcon,
   default166 as BaseIconPaintRoller01Icon,
-  default167 as BaseIconPanelLeftCloseIcon,
-  default168 as BaseIconPanelLeftOpenIcon,
-  default169 as BaseIconPanelRightCloseIcon,
-  default170 as BaseIconPanelRightOpenIcon,
-  default171 as BaseIconPenIcon,
-  default172 as BaseIconPercentCircleIcon,
-  default173 as BaseIconPercentIcon,
-  default174 as BaseIconPinIcon,
-  default175 as BaseIconPixIcon,
-  default176 as BaseIconPlayerPauseIcon,
-  default177 as BaseIconPlayerPlayIcon,
-  default178 as BaseIconPlaylistIcon,
-  default179 as BaseIconPlusAddIcon,
-  default180 as BaseIconPlusCircleIcon,
-  default181 as BaseIconPowerIcon,
-  default182 as BaseIconPrinterIcon,
-  default183 as BaseIconPromoteArrowIcon,
-  default184 as BaseIconQueueIcon,
-  default185 as BaseIconRadioIcon,
-  default186 as BaseIconRatio12Icon,
-  default187 as BaseIconRatio21Icon,
-  default188 as BaseIconRatioSquareIcon,
-  default189 as BaseIconRefreshIcon,
-  default190 as BaseIconReloadRefreshIcon,
-  default191 as BaseIconReorderIcon,
-  default192 as BaseIconRepeatOffIcon,
-  default193 as BaseIconRepeatOnIcon,
-  default194 as BaseIconRepeatOneIcon,
-  default195 as BaseIconReplaceIcon,
-  default196 as BaseIconRepostIcon,
-  default197 as BaseIconRocketIcon,
-  default198 as BaseIconRotateLeftIcon,
-  default199 as BaseIconSale01Icon,
-  default200 as BaseIconSalesIcon,
-  default201 as BaseIconSaveIcon,
-  default202 as BaseIconScale01Icon,
-  default204 as BaseIconScanIcon,
-  default203 as BaseIconScanRightsIcon,
-  default205 as BaseIconSearchIcon,
-  default206 as BaseIconSend01Icon,
-  default207 as BaseIconSend02Icon,
-  default208 as BaseIconServicesIcon,
-  default209 as BaseIconSettingsIcon,
-  default210 as BaseIconShareAndroidIcon,
-  default211 as BaseIconShareExternalOpenIcon,
-  default212 as BaseIconShieldPrivacyIcon,
-  default213 as BaseIconShoppingBag01Icon,
-  default214 as BaseIconShoppingBagAddIcon,
-  default215 as BaseIconShoppingBagRemoveIcon,
-  default216 as BaseIconShuffleOffIcon,
-  default217 as BaseIconShuffleOnIcon,
-  default218 as BaseIconSignalStreamIcon,
-  default219 as BaseIconSimilarIcon,
-  default220 as BaseIconSkipBackIcon,
-  default221 as BaseIconSkipForwardIcon,
-  default222 as BaseIconSliders01Icon,
-  default223 as BaseIconSliders02Icon,
-  default224 as BaseIconSnowflake01Icon,
-  default225 as BaseIconSortIcon,
-  default226 as BaseIconSoundKitIcon,
-  default227 as BaseIconStar02Icon,
-  default229 as BaseIconStarIcon,
-  default228 as BaseIconStarMinusIcon,
-  default230 as BaseIconStore01Icon,
-  default231 as BaseIconSunIcon,
-  default232 as BaseIconTag01Icon,
-  default233 as BaseIconTagPriceIcon,
-  default234 as BaseIconTargetIcon,
-  default235 as BaseIconTextInputIcon,
-  default236 as BaseIconThumbsUpIcon,
-  default237 as BaseIconTicketDiscountIcon,
-  default238 as BaseIconToggleOffIcon,
-  default239 as BaseIconToggleOnIcon,
-  default240 as BaseIconTracklistIcon,
-  default241 as BaseIconTransaction01Icon,
-  default242 as BaseIconTranslate01Icon,
-  default243 as BaseIconTypeTextIcon,
-  default244 as BaseIconUnlistedIcon,
-  default245 as BaseIconUnlocked01Icon,
-  default246 as BaseIconUnlocked02Icon,
-  default247 as BaseIconUploadIcon,
-  default248 as BaseIconUser01Icon,
-  default249 as BaseIconUserCircleIcon,
-  default250 as BaseIconUserIdIcon,
-  default251 as BaseIconUserInfoIcon,
-  default252 as BaseIconUserUnfollowIcon,
-  default253 as BaseIconUsers01Icon,
-  default254 as BaseIconUsers02Icon,
-  default255 as BaseIconVideoRecorderIcon,
-  default256 as BaseIconVideoStreamIcon,
-  default257 as BaseIconVoloco01Icon,
-  default259 as BaseIconWalletIcon,
-  default258 as BaseIconWalletMusicIcon,
-  default260 as BaseIconZoomInIcon,
-  default261 as BaseIconZoomOutIcon
+  default167 as BaseIconPenIcon,
+  default168 as BaseIconPercentCircleIcon,
+  default169 as BaseIconPercentIcon,
+  default170 as BaseIconPinIcon,
+  default171 as BaseIconPixIcon,
+  default172 as BaseIconPlayerPauseIcon,
+  default173 as BaseIconPlayerPlayIcon,
+  default174 as BaseIconPlaylistIcon,
+  default175 as BaseIconPlusAddIcon,
+  default176 as BaseIconPlusCircleIcon,
+  default177 as BaseIconPowerIcon,
+  default178 as BaseIconPrinterIcon,
+  default179 as BaseIconPromoteArrowIcon,
+  default180 as BaseIconQueueIcon,
+  default181 as BaseIconRadioIcon,
+  default182 as BaseIconRatio12Icon,
+  default183 as BaseIconRatio21Icon,
+  default184 as BaseIconRatioSquareIcon,
+  default185 as BaseIconRefreshIcon,
+  default186 as BaseIconReloadRefreshIcon,
+  default187 as BaseIconReorderIcon,
+  default188 as BaseIconRepeatOffIcon,
+  default189 as BaseIconRepeatOnIcon,
+  default190 as BaseIconRepeatOneIcon,
+  default191 as BaseIconReplaceIcon,
+  default192 as BaseIconRepostIcon,
+  default193 as BaseIconRocketIcon,
+  default194 as BaseIconRotateLeftIcon,
+  default195 as BaseIconSale01Icon,
+  default196 as BaseIconSalesIcon,
+  default197 as BaseIconSaveIcon,
+  default198 as BaseIconScale01Icon,
+  default200 as BaseIconScanIcon,
+  default199 as BaseIconScanRightsIcon,
+  default201 as BaseIconSearchIcon,
+  default202 as BaseIconSend01Icon,
+  default203 as BaseIconSend02Icon,
+  default204 as BaseIconServicesIcon,
+  default205 as BaseIconSettingsIcon,
+  default206 as BaseIconShareAndroidIcon,
+  default207 as BaseIconShareExternalOpenIcon,
+  default208 as BaseIconShieldPrivacyIcon,
+  default209 as BaseIconShoppingBag01Icon,
+  default210 as BaseIconShoppingBagAddIcon,
+  default211 as BaseIconShoppingBagRemoveIcon,
+  default212 as BaseIconShuffleOffIcon,
+  default213 as BaseIconShuffleOnIcon,
+  default214 as BaseIconSignalStreamIcon,
+  default215 as BaseIconSimilarIcon,
+  default216 as BaseIconSkipBackIcon,
+  default217 as BaseIconSkipForwardIcon,
+  default218 as BaseIconSliders01Icon,
+  default219 as BaseIconSliders02Icon,
+  default220 as BaseIconSnowflake01Icon,
+  default221 as BaseIconSortIcon,
+  default222 as BaseIconSoundKitIcon,
+  default223 as BaseIconStar02Icon,
+  default225 as BaseIconStarIcon,
+  default224 as BaseIconStarMinusIcon,
+  default226 as BaseIconStore01Icon,
+  default227 as BaseIconSunIcon,
+  default228 as BaseIconTag01Icon,
+  default229 as BaseIconTagPriceIcon,
+  default230 as BaseIconTargetIcon,
+  default231 as BaseIconTextInputIcon,
+  default232 as BaseIconThumbsUpIcon,
+  default233 as BaseIconTicketDiscountIcon,
+  default234 as BaseIconToggleOffIcon,
+  default235 as BaseIconToggleOnIcon,
+  default236 as BaseIconTracklistIcon,
+  default237 as BaseIconTransaction01Icon,
+  default238 as BaseIconTranslate01Icon,
+  default239 as BaseIconTypeTextIcon,
+  default240 as BaseIconUnlistedIcon,
+  default241 as BaseIconUnlocked01Icon,
+  default242 as BaseIconUnlocked02Icon,
+  default243 as BaseIconUploadIcon,
+  default244 as BaseIconUser01Icon,
+  default245 as BaseIconUserCircleIcon,
+  default246 as BaseIconUserIdIcon,
+  default247 as BaseIconUserInfoIcon,
+  default248 as BaseIconUserUnfollowIcon,
+  default249 as BaseIconUsers01Icon,
+  default250 as BaseIconUsers02Icon,
+  default251 as BaseIconVideoRecorderIcon,
+  default252 as BaseIconVideoStreamIcon,
+  default253 as BaseIconVoloco01Icon,
+  default255 as BaseIconWalletIcon,
+  default254 as BaseIconWalletMusicIcon,
+  default256 as BaseIconZoomInIcon,
+  default257 as BaseIconZoomOutIcon
 };

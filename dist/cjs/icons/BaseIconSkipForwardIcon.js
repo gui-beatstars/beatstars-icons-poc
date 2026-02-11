@@ -37,7 +37,7 @@ const BaseIconSkipForwardIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M20 4v16M7.32 18.84l7.45-5.4c.68-.49 1.03-.74 1.15-1.03q.15-.41 0-.82c-.12-.3-.47-.54-1.15-1.03l-7.45-5.4C6.26 4.39 5.72 4 5.28 4q-.62.01-1 .43C4 4.75 4 5.37 4 6.6v10.8c0 1.23 0 1.85.28 2.17q.38.42 1 .43c.45 0 .98-.39 2.04-1.16" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M20 4v16M7.319 18.845l7.454-5.4c.682-.494 1.023-.741 1.146-1.04.108-.26.108-.55 0-.81-.123-.299-.464-.546-1.146-1.04l-7.454-5.4C6.256 4.385 5.725 4 5.279 4c-.39 0-.758.16-1 .435C4 4.75 4 5.367 4 6.6v10.8c0 1.233 0 1.849.279 2.165.242.275.61.435 1 .435.446 0 .977-.385 2.04-1.155" })
     }
   )
 );

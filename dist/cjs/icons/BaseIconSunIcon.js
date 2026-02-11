@@ -37,7 +37,7 @@ const BaseIconSunIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M12 2v2m0 16v2M4 12H2m4.31-5.69L4.9 4.9m12.79 1.41L19.1 4.9M6.31 17.69 4.9 19.1m12.79-1.41 1.41 1.41M22 12h-2m-3 0a5 5 0 1 1-10 0 5 5 0 0 1 10 0" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M12 2v2m0 16v2M4 12H2m4.314-5.686L4.9 4.9m12.786 1.414L19.1 4.9M6.314 17.69 4.9 19.104m12.786-1.414 1.414 1.414M22 12h-2m-3 0a5 5 0 1 1-10 0 5 5 0 0 1 10 0" })
     }
   )
 );

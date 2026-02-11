@@ -14,7 +14,7 @@ const BaseIconMusicNote02Icon = forwardRef(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M18 5.78 12.86 4v12.44m-1-2.51a3.65 3.65 0 0 1 0 5.03 3.34 3.34 0 0 1-4.86 0 3.65 3.65 0 0 1 0-5.03 3.34 3.34 0 0 1 4.85 0" })
+      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M18 5.778 12.857 4v12.444m-1.004-2.514c1.339 1.389 1.339 3.64 0 5.029a3.343 3.343 0 0 1-4.849 0c-1.339-1.389-1.339-3.64 0-5.029a3.343 3.343 0 0 1 4.849 0" })
     }
   )
 );

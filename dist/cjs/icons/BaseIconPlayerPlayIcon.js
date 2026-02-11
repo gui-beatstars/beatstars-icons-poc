@@ -37,7 +37,7 @@ const BaseIconPlayerPlayIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M6 5.09c0-.96 0-1.44.2-1.7A1 1 0 0 1 6.93 3c.33-.02.73.25 1.52.78l10.37 6.9c.66.45.99.67 1.1.94q.15.38 0 .76c-.11.27-.44.5-1.1.93L8.45 20.22c-.8.53-1.2.8-1.52.78a1 1 0 0 1-.73-.39c-.2-.26-.2-.74-.2-1.7z" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M6 5.09c0-.957 0-1.436.2-1.7a1 1 0 0 1 .727-.389c.33-.02.73.246 1.526.777l10.37 6.91c.658.438.987.658 1.102.934.1.242.1.514 0 .756-.115.276-.444.495-1.103.934l-10.369 6.91c-.797.531-1.195.797-1.526.777a1 1 0 0 1-.727-.39c-.2-.263-.2-.742-.2-1.699z" })
     }
   )
 );

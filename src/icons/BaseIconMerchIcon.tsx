@@ -15,7 +15,7 @@ const BaseIconMerchIcon = forwardRef<SVGSVGElement, IconProps>(
       style={style}
       {...rest}
     >
-      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.5 2.02A3 3 0 0 1 12.52 5h-1.04A3 3 0 0 1 8.5 2.02M17.99 13l3.24-.77a1 1 0 0 0 .74-1.21l-1.3-5.19a4 4 0 0 0-2.16-2.64l-1.7-.8A4 4 0 0 0 15.1 2H8.9a4 4 0 0 0-1.71.39l-1.7.8a4 4 0 0 0-2.16 2.64l-1.3 5.19a1 1 0 0 0 .74 1.21L6 13m0-3v8.54c-.01.9.59 1.7 1.45 1.93 3 .7 6.1.7 9.1 0A2 2 0 0 0 18 18.54V10"/>
+      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.5 2.02A2.98 2.98 0 0 1 12.52 5h-1.04A2.98 2.98 0 0 1 8.5 2.02m9.488 10.976 3.241-.764a1 1 0 0 0 .74-1.215l-1.295-5.183a4 4 0 0 0-2.166-2.644l-1.694-.804A4 4 0 0 0 15.099 2H8.901a4 4 0 0 0-1.715.386l-1.694.804a4 4 0 0 0-2.166 2.644L2.03 11.017a1 1 0 0 0 .741 1.215l3.217.758M6 10v8.543c-.01.898.588 1.69 1.454 1.927 2.99.707 6.103.707 9.092 0A1.974 1.974 0 0 0 18 18.543V10"/>
     </svg>
   )
 );

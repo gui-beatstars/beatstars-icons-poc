@@ -37,7 +37,7 @@ const BaseIconUnlistedIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeWidth: "2", d: "M4 7h8.5m4 0H20m-5.5 5H20m-7.5 5H20M4 12h7m-3.15 8.66 6.3-17.32M4 17h5" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeWidth: "2", d: "M4 7h8.5m4 0H20m-5.5 5H20m-7.5 5H20M4 12h7m-3.152 8.664 6.306-17.328M4 17h5" })
     }
   )
 );

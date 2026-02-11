@@ -15,7 +15,7 @@ const BaseIconSkipBackIcon = forwardRef<SVGSVGElement, IconProps>(
       style={style}
       {...rest}
     >
-      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v16m12.68-1.16-7.45-5.4c-.68-.49-1.03-.74-1.15-1.03q-.15-.41 0-.82c.12-.3.47-.54 1.15-1.03l7.45-5.4C17.74 4.39 18.28 4 18.72 4c.4 0 .76.16 1 .43.28.32.28.94.28 2.17v10.8c0 1.23 0 1.85-.28 2.17-.24.27-.6.43-1 .43-.45 0-.98-.39-2.04-1.16"/>
+      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v16m12.681-1.155-7.454-5.4c-.682-.494-1.022-.741-1.146-1.04a1.05 1.05 0 0 1 0-.81c.124-.299.464-.546 1.146-1.04l7.454-5.4C17.744 4.385 18.275 4 18.721 4c.39 0 .758.16 1 .435C20 4.75 20 5.367 20 6.6v10.8c0 1.233 0 1.849-.279 2.165a1.33 1.33 0 0 1-1 .435c-.446 0-.977-.385-2.04-1.155"/>
     </svg>
   )
 );

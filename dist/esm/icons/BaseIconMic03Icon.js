@@ -14,7 +14,7 @@ const BaseIconMic03Icon = forwardRef(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M15 12.9A5 5 0 1 0 11.1 9m3.9 3.9L11.1 9l-7.51 8.6a2 2 0 0 0 2.81 2.8z" })
+      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M15.002 12.9A5 5 0 1 0 11.1 9m3.902 3.9L11.1 9.001l-7.513 8.584a2 2 0 0 0 2.827 2.83z" })
     }
   )
 );

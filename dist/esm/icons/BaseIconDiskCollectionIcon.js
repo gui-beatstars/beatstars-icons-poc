@@ -14,7 +14,7 @@ const BaseIconDiskCollectionIcon = forwardRef(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M5.82 2.5h12.36m-3.63 8.47a3.76 3.76 0 0 1 0 5.23 3.55 3.55 0 0 1-5.1 0 3.76 3.76 0 0 1 0-5.23 3.55 3.55 0 0 1 5.1 0m4.39-5.3H5.06A2.1 2.1 0 0 0 3 7.92l.76 11.6a2.1 2.1 0 0 0 2.06 1.98h12.36c1.09 0 1.99-.86 2.06-1.97L21 7.92a2.1 2.1 0 0 0-2.06-2.25" })
+      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M5.817 2.5h12.366m-3.633 8.47a3.76 3.76 0 0 1 0 5.226 3.547 3.547 0 0 1-5.1 0 3.76 3.76 0 0 1 0-5.225 3.547 3.547 0 0 1 5.1 0m4.388-5.303H5.062c-1.193 0-2.137 1.033-2.057 2.251L3.76 19.53c.072 1.11.972 1.971 2.057 1.971h12.366c1.085 0 1.985-.861 2.057-1.97l.755-11.612c.08-1.218-.864-2.251-2.057-2.251" })
     }
   )
 );

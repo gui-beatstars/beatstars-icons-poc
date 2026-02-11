@@ -15,7 +15,7 @@ const BaseIconBpmIcon = forwardRef<SVGSVGElement, IconProps>(
       style={style}
       {...rest}
     >
-      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2 12.95h4L9 22l6-20 3 11.05 4-.05"/>
+      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2 12.952h4L9 22l6-20 3 11.048L22 13"/>
     </svg>
   )
 );

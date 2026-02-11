@@ -24,7 +24,7 @@ module.exports = __toCommonJS(BaseIconCategoriesIcon_exports);
 var import_jsx_runtime = require("react/jsx-runtime");
 var import_react = require("react");
 const BaseIconCategoriesIcon = (0, import_react.forwardRef)(
-  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
     "svg",
     {
       ref,
@@ -37,7 +37,11 @@ const BaseIconCategoriesIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeWidth: "2", d: "M16 6.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-6 11a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm12 0a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" })
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeWidth: "2", d: "M16 6.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeWidth: "2", d: "M10 17.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeWidth: "2", d: "M22 17.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" })
+      ]
     }
   )
 );

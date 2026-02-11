@@ -15,7 +15,7 @@ const BaseIconGenderNeutralIcon = forwardRef<SVGSVGElement, IconProps>(
       style={style}
       {...rest}
     >
-      <path stroke="currentColor" strokeLinejoin="round" strokeWidth="2" d="M9 9h6v6h-1v7h-4v-7H9zm5-5v2h-4V2h4z"/>
+      <path stroke="currentColor" strokeLinejoin="round" strokeWidth="2" d="M9 9h6v6h-1v7h-4v-7H9z"/><path stroke="currentColor" strokeLinejoin="round" strokeWidth="2" d="M14 4v2h-4V2h4z"/>
     </svg>
   )
 );

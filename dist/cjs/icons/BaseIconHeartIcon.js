@@ -37,7 +37,7 @@ const BaseIconHeartIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M16.11 3C19.63 3 22 6.35 22 9.48 22 15.81 12.18 21 12 21S2 15.81 2 9.48C2 6.35 4.37 3 7.89 3A5.3 5.3 0 0 1 12 4.92 5.3 5.3 0 0 1 16.11 3" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M16.111 3C19.633 3 22 6.353 22 9.48 22 15.814 12.178 21 12 21S2 15.814 2 9.48C2 6.352 4.367 3 7.889 3 9.91 3 11.233 4.024 12 4.924 12.767 4.024 14.089 3 16.111 3" })
     }
   )
 );

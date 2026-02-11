@@ -24,7 +24,7 @@ module.exports = __toCommonJS(BaseIconPlayerPauseIcon_exports);
 var import_jsx_runtime = require("react/jsx-runtime");
 var import_react = require("react");
 const BaseIconPlayerPauseIcon = (0, import_react.forwardRef)(
-  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
     "svg",
     {
       ref,
@@ -37,7 +37,10 @@ const BaseIconPlayerPauseIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M5.52 3h4.12c.21 0 .29.02.37.06q.1.06.18.17c.04.07.06.15.06.35v16.84c0 .2-.02.28-.06.35a.4.4 0 0 1-.18.17c-.08.04-.16.06-.37.06H5.6c-.21 0-.29-.02-.37-.06a.4.4 0 0 1-.18-.17l-.06-.26V3.58c0-.2.02-.28.06-.35q.07-.1.18-.17A1 1 0 0 1 5.52 3m8.75 0h4.12c.21 0 .29.02.37.06q.1.06.18.17c.04.07.06.15.06.35v16.84c0 .2-.02.28-.06.35a.4.4 0 0 1-.18.17c-.08.04-.16.06-.37.06h-4.03c-.21 0-.29-.02-.37-.06a.4.4 0 0 1-.18-.17l-.06-.26V3.58c0-.2.02-.28.06-.35q.07-.1.18-.17a1 1 0 0 1 .28-.06", clipRule: "evenodd" })
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M5.516 3.002 9.638 3c.213 0 .29.02.368.06q.118.06.18.17c.042.074.064.146.064.347v16.846c0 .2-.022.274-.064.347a.4.4 0 0 1-.18.17c-.078.04-.155.06-.368.06H5.612c-.213 0-.29-.02-.368-.06a.4.4 0 0 1-.18-.17.5.5 0 0 1-.062-.257L5 3.577c0-.2.022-.273.064-.347a.4.4 0 0 1 .18-.17.6.6 0 0 1 .272-.058", clipRule: "evenodd" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M14.266 3.002 18.388 3c.213 0 .29.02.368.06q.118.06.18.17c.042.074.064.146.064.347v16.846c0 .2-.022.274-.064.347a.4.4 0 0 1-.18.17c-.078.04-.155.06-.368.06h-4.026c-.213 0-.29-.02-.368-.06a.4.4 0 0 1-.18-.17.5.5 0 0 1-.062-.257L13.75 3.577c0-.2.022-.273.064-.347a.4.4 0 0 1 .18-.17.6.6 0 0 1 .272-.058", clipRule: "evenodd" })
+      ]
     }
   )
 );

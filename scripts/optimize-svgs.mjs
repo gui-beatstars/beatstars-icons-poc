@@ -46,14 +46,17 @@ const svgoConfig = {
     
     // Clean up structure
     'collapseGroups',
-    'mergePaths',
+    // NOTE: mergePaths is intentionally omitted — it removes tiny path segments
+    // that represent dots on icons like exclamation (!), help-circle (?), info (i).
+    // These dots are encoded as 0.01px H commands (e.g. M12 16H12.01) which
+    // mergePaths considers imperceptible and strips out.
     'convertShapeToPath',
-    
+
     // Optimize paths
     {
       name: 'convertPathData',
       params: {
-        floatPrecision: 2,
+        floatPrecision: 3,
       },
     },
     

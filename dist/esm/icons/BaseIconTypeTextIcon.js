@@ -14,7 +14,7 @@ const BaseIconTypeTextIcon = forwardRef(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M4 7c0-.93 0-1.4.15-1.77a2 2 0 0 1 1.08-1.08C5.6 4 6.07 4 7 4h6c.93 0 1.4 0 1.77.15a2 2 0 0 1 1.08 1.08C16 5.6 16 6.07 16 7M7 20h6M10 4v16M20 4v16" })
+      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M4 7c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.083-1.083C5.602 4 6.068 4 7 4h6c.932 0 1.398 0 1.765.152a2 2 0 0 1 1.083 1.083C16 5.602 16 6.068 16 7M7 20h6M10 4v16M20 4v16" })
     }
   )
 );

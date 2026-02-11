@@ -15,7 +15,7 @@ const BaseIconLoopKitIcon = forwardRef<SVGSVGElement, IconProps>(
       style={style}
       {...rest}
     >
-      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7.68 9.66 6.02 8 2 12l4.02 4 8.03-8m2.15 6.22L17.98 16 22 12l-4.02-4-8.03 8"/>
+      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7.68 9.657 6.016 8 2 12l4.016 4 8.033-8m2.15 6.223L17.984 16 22 12l-4.016-4-8.033 8"/>
     </svg>
   )
 );

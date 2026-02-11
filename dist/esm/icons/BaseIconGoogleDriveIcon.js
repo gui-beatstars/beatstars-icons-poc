@@ -14,7 +14,7 @@ const BaseIconGoogleDriveIcon = forwardRef(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M22.5 15.46 15.05 3H8.27M22.5 15.46h-6.1L8.27 3M22.5 15.46H7.6L4.2 21m18.29-5.54L19.11 21H4.21M8.27 3 1.5 15.46 4.21 21M8.27 3l3.6 5.51L4.21 21" })
+      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M22.5 15.462 15.048 3H8.274M22.5 15.462h-6.097L8.274 3M22.5 15.462H7.597L4.21 21m18.29-5.539L19.113 21H4.21M8.274 3 1.5 15.462 4.21 21M8.274 3l3.596 5.512L4.21 21" })
     }
   )
 );

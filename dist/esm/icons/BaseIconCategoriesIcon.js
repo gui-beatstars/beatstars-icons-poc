@@ -1,7 +1,7 @@
-import { jsx } from "react/jsx-runtime";
+import { jsx, jsxs } from "react/jsx-runtime";
 import { forwardRef } from "react";
 const BaseIconCategoriesIcon = forwardRef(
-  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ jsx(
+  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ jsxs(
     "svg",
     {
       ref,
@@ -14,7 +14,11 @@ const BaseIconCategoriesIcon = forwardRef(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeWidth: "2", d: "M16 6.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-6 11a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm12 0a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" })
+      children: [
+        /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeWidth: "2", d: "M16 6.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" }),
+        /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeWidth: "2", d: "M10 17.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" }),
+        /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeWidth: "2", d: "M22 17.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" })
+      ]
     }
   )
 );

@@ -37,7 +37,7 @@ const BaseIconUsers02Icon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M23 19v-1.1a2.5 2.5 0 0 0-2.5-2.5h-.8M1 19v-1.1a2.5 2.5 0 0 1 2.5-2.5h.8M17.34 19v-1.6a3.5 3.5 0 0 0-3.5-3.5h-3.68a3.5 3.5 0 0 0-3.5 3.5V19m14.13-9.48a2.02 2.02 0 1 1-2.86 2.86 2.02 2.02 0 0 1 2.86-2.86m-6.59-3.6a3.11 3.11 0 1 1-4.4 4.4 3.11 3.11 0 0 1 4.4-4.4m-8.13 3.6a2.02 2.02 0 1 1-2.86 2.86 2.02 2.02 0 0 1 2.86-2.86" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M23 19v-1.096a2.5 2.5 0 0 0-2.5-2.5h-.801M1 19v-1.096a2.5 2.5 0 0 1 2.5-2.5h.801M17.339 19v-1.601a3.5 3.5 0 0 0-3.5-3.5H10.16a3.5 3.5 0 0 0-3.5 3.5V19m14.133-9.476a2.023 2.023 0 1 1-2.862 2.86 2.023 2.023 0 0 1 2.861-2.86m-6.59-3.612a3.115 3.115 0 1 1-4.406 4.406 3.115 3.115 0 0 1 4.406-4.406M6.068 9.524a2.023 2.023 0 1 1-2.86 2.86 2.023 2.023 0 0 1 2.86-2.86" })
     }
   )
 );

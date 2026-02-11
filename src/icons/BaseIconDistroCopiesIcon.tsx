@@ -15,7 +15,7 @@ const BaseIconDistroCopiesIcon = forwardRef<SVGSVGElement, IconProps>(
       style={style}
       {...rest}
     >
-      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m12 4-4.85 7.71q-.1.14-.11.22v.14q.01.07.11.22L12 20M6.97 4l-4.85 7.71q-.1.14-.11.22v.14q.01.07.11.22L6.97 20M17.03 4l4.85 7.71q.1.14.11.22.02.07 0 .14l-.11.22L17.03 20l-4.85-7.71q-.1-.14-.11-.22v-.14q.01-.07.11-.22z"/>
+      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m12 4-4.85 7.714a.8.8 0 0 0-.112.212.3.3 0 0 0 0 .148.8.8 0 0 0 .112.212L12 20M6.97 4l-4.85 7.714a.8.8 0 0 0-.111.212.3.3 0 0 0 0 .148.8.8 0 0 0 .112.212L6.97 20M17.03 4l4.85 7.714a.8.8 0 0 1 .111.212.3.3 0 0 1 0 .148.8.8 0 0 1-.112.212L17.03 20l-4.85-7.714c-.065-.105-.098-.157-.111-.212a.3.3 0 0 1 0-.148c.013-.055.046-.107.112-.212z"/>
     </svg>
   )
 );

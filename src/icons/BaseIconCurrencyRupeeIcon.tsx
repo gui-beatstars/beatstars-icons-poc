@@ -15,7 +15,7 @@ const BaseIconCurrencyRupeeIcon = forwardRef<SVGSVGElement, IconProps>(
       style={style}
       {...rest}
     >
-      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 3h12M6 8h12m-3.5 13L6 13h3c6.67 0 6.67-10 0-10"/>
+      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 3h12M6 8h12m-3.5 13L6 13h3c6.667 0 6.667-10 0-10"/>
     </svg>
   )
 );

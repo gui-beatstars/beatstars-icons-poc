@@ -1,7 +1,7 @@
-import { jsx } from "react/jsx-runtime";
+import { jsx, jsxs } from "react/jsx-runtime";
 import { forwardRef } from "react";
 const BaseIconGraphPieIcon = forwardRef(
-  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ jsx(
+  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ jsxs(
     "svg",
     {
       ref,
@@ -14,7 +14,10 @@ const BaseIconGraphPieIcon = forwardRef(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M17.2 14c.28 0 .42 0 .53.06q.15.09.22.24c.05.12.04.25.01.5A8 8 0 1 1 9.2 6.04c.25-.03.38-.04.5.01q.16.07.24.22c.06.11.06.25.06.53v6.4c0 .28 0 .42.05.53q.08.15.22.22c.11.05.25.05.53.05zM14 2.8c0-.28 0-.42.06-.53q.09-.15.24-.22c.12-.05.25-.04.5-.01a8 8 0 0 1 7.16 7.16c.03.25.04.38-.01.5q-.07.16-.22.24c-.11.06-.25.06-.53.06h-6.4c-.28 0-.42 0-.53-.05a.5.5 0 0 1-.22-.22C14 9.62 14 9.48 14 9.2z" })
+      children: [
+        /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M17.2 14c.277 0 .416 0 .528.062a.53.53 0 0 1 .22.243c.05.117.037.243.012.494A8 8 0 1 1 9.201 6.04c.251-.025.376-.038.494.012a.53.53 0 0 1 .243.22c.062.112.062.251.062.528v6.4c0 .28 0 .42.055.527a.5.5 0 0 0 .218.218c.107.055.247.055.527.055z" }),
+        /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M14 2.8c0-.277 0-.416.062-.528a.53.53 0 0 1 .243-.22c.117-.05.243-.037.494-.012A8 8 0 0 1 21.96 9.2c.025.251.038.376-.012.494a.53.53 0 0 1-.22.243c-.113.062-.251.062-.528.062h-6.4c-.28 0-.42 0-.527-.055a.5.5 0 0 1-.218-.218C14 9.62 14 9.48 14 9.2z" })
+      ]
     }
   )
 );

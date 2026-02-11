@@ -37,7 +37,7 @@ const BaseIconHammer01Icon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M21 21H10.41M9.62 9.5l-5.92 5a1.99 1.99 0 1 0 2.75 2.85l5.24-5.76m3.42-4.3 2.2 1.76a1.84 1.84 0 0 1 .16 2.73l-1.68 1.69a1.8 1.8 0 0 1-2.7-.15l-1.78-2.2q-.63-.8-1.42-1.42L7.7 7.94a1.84 1.84 0 0 1-.16-2.72l1.68-1.69a1.8 1.8 0 0 1 2.7.15l1.78 2.2q.63.8 1.42 1.42" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M21.004 21.004h-10.59m-.79-11.518-5.927 5.015a1.987 1.987 0 1 0 2.755 2.852l5.236-5.766m3.422-4.289 2.2 1.756a1.836 1.836 0 0 1 .157 2.727l-1.677 1.685a1.814 1.814 0 0 1-2.701-.143l-1.777-2.207a9.2 9.2 0 0 0-1.42-1.417L7.69 7.943a1.836 1.836 0 0 1-.156-2.727l1.674-1.683a1.815 1.815 0 0 1 2.701.143l1.779 2.206c.42.523.897.998 1.422 1.416" })
     }
   )
 );

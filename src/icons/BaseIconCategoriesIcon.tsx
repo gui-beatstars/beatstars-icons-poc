@@ -15,7 +15,7 @@ const BaseIconCategoriesIcon = forwardRef<SVGSVGElement, IconProps>(
       style={style}
       {...rest}
     >
-      <path stroke="currentColor" strokeWidth="2" d="M16 6.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-6 11a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm12 0a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/>
+      <path stroke="currentColor" strokeWidth="2" d="M16 6.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/><path stroke="currentColor" strokeWidth="2" d="M10 17.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/><path stroke="currentColor" strokeWidth="2" d="M22 17.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/>
     </svg>
   )
 );

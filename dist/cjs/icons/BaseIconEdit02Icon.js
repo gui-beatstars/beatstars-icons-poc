@@ -37,7 +37,7 @@ const BaseIconEdit02Icon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "m17.43 10.29-3.72-3.72M3 21l3.15-.35c.39-.04.58-.06.76-.12q.24-.08.45-.22c.16-.1.3-.24.57-.51l12.3-12.3a2.63 2.63 0 1 0-3.73-3.73L4.2 16.07c-.27.27-.4.41-.51.57q-.15.22-.22.45c-.06.18-.08.37-.12.76z" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M17.435 10.29 13.71 6.565M3 21l3.152-.35c.385-.043.577-.064.757-.123q.241-.077.452-.217c.158-.104.295-.24.569-.515L20.229 7.497a2.634 2.634 0 1 0-3.726-3.726l-12.298 12.3c-.274.273-.411.41-.515.568q-.14.211-.217.452c-.059.18-.08.372-.123.757z" })
     }
   )
 );

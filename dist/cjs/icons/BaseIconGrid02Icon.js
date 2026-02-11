@@ -24,7 +24,7 @@ module.exports = __toCommonJS(BaseIconGrid02Icon_exports);
 var import_jsx_runtime = require("react/jsx-runtime");
 var import_react = require("react");
 const BaseIconGrid02Icon = (0, import_react.forwardRef)(
-  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
     "svg",
     {
       ref,
@@ -37,7 +37,12 @@ const BaseIconGrid02Icon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M8.4 3H4.6c-.56 0-.84 0-1.05.1a1 1 0 0 0-.44.45C3 3.76 3 4.04 3 4.6v3.8c0 .56 0 .84.1 1.05a1 1 0 0 0 .45.44c.21.11.49.11 1.05.11h3.8c.56 0 .84 0 1.05-.1a1 1 0 0 0 .44-.45c.11-.21.11-.49.11-1.05V4.6c0-.56 0-.84-.1-1.05a1 1 0 0 0-.45-.44C9.24 3 8.96 3 8.4 3m11 11h-3.8c-.56 0-.84 0-1.05.1a1 1 0 0 0-.44.45c-.11.21-.11.49-.11 1.05v3.8c0 .56 0 .84.1 1.05a1 1 0 0 0 .45.44c.21.11.49.11 1.05.11h3.8c.56 0 .84 0 1.05-.1a1 1 0 0 0 .44-.45c.11-.21.11-.49.11-1.05v-3.8c0-.56 0-.84-.1-1.05a1 1 0 0 0-.45-.44c-.21-.11-.49-.11-1.05-.11m-11 0H4.6c-.56 0-.84 0-1.05.1a1 1 0 0 0-.44.45C3 14.76 3 15.04 3 15.6v3.8c0 .56 0 .84.1 1.05a1 1 0 0 0 .45.44c.21.11.49.11 1.05.11h3.8c.56 0 .84 0 1.05-.1a1 1 0 0 0 .44-.45c.11-.21.11-.49.11-1.05v-3.8c0-.56 0-.84-.1-1.05a1 1 0 0 0-.45-.44C9.24 14 8.96 14 8.4 14m7.97-11.32-2.69 2.69c-.4.4-.6.6-.67.82a1 1 0 0 0 0 .62c.08.23.28.43.67.82l2.69 2.69c.4.4.6.6.82.67a1 1 0 0 0 .62 0c.23-.08.43-.28.82-.67l2.69-2.69c.4-.4.6-.6.67-.82a1 1 0 0 0 0-.62c-.08-.23-.28-.43-.67-.82l-2.69-2.69c-.4-.4-.6-.6-.82-.67a1 1 0 0 0-.62 0c-.23.08-.43.28-.82.67" })
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M8.4 3H4.6c-.56 0-.84 0-1.054.109a1 1 0 0 0-.437.437C3 3.76 3 4.04 3 4.6v3.8c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437C3.76 10 4.04 10 4.6 10h3.8c.56 0 .84 0 1.054-.109a1 1 0 0 0 .437-.437C10 9.24 10 8.96 10 8.4V4.6c0-.56 0-.84-.109-1.054a1 1 0 0 0-.437-.437C9.24 3 8.96 3 8.4 3" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M19.4 14h-3.8c-.56 0-.84 0-1.054.109a1 1 0 0 0-.437.437C14 14.76 14 15.04 14 15.6v3.8c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437C14.76 21 15.04 21 15.6 21h3.8c.56 0 .84 0 1.054-.109a1 1 0 0 0 .437-.437C21 20.24 21 19.96 21 19.4v-3.8c0-.56 0-.84-.109-1.054a1 1 0 0 0-.437-.437C20.24 14 19.96 14 19.4 14" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M8.4 14H4.6c-.56 0-.84 0-1.054.109a1 1 0 0 0-.437.437C3 14.76 3 15.04 3 15.6v3.8c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437C3.76 21 4.04 21 4.6 21h3.8c.56 0 .84 0 1.054-.109a1 1 0 0 0 .437-.437C10 20.24 10 19.96 10 19.4v-3.8c0-.56 0-.84-.109-1.054a1 1 0 0 0-.437-.437C9.24 14 8.96 14 8.4 14" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "m16.369 2.682-2.687 2.687c-.396.396-.594.594-.669.822a1 1 0 0 0 0 .618c.075.228.273.426.669.822l2.687 2.687c.396.396.594.594.822.669a1 1 0 0 0 .618 0c.228-.075.426-.273.822-.669l2.687-2.687c.396-.396.594-.594.669-.822a1 1 0 0 0 0-.618c-.075-.228-.273-.426-.669-.822l-2.687-2.687c-.396-.396-.594-.594-.822-.669a1 1 0 0 0-.618 0c-.228.075-.426.273-.822.669" })
+      ]
     }
   )
 );

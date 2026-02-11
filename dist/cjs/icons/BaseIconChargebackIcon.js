@@ -37,7 +37,7 @@ const BaseIconChargebackIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M12 7h1.17a2.33 2.33 0 0 1 2.33 2.33M12 7h-1a2.5 2.5 0 0 0 0 5h2a2.5 2.5 0 0 1 0 5h-1m0-10V5.5M12 17h-1.17a2.33 2.33 0 0 1-2.33-2.33M12 17v1.5M2 10s2-2.73 3.63-4.36a9 9 0 1 1-2.28 8.86M2 10V6m0 4h4" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M12 7h1.167A2.333 2.333 0 0 1 15.5 9.333M12 7h-1a2.5 2.5 0 0 0 0 5h2a2.5 2.5 0 0 1 0 5h-1m0-10V5.5M12 17h-1.167A2.333 2.333 0 0 1 8.5 14.667M12 17v1.5M2 10s2.005-2.732 3.634-4.362A9 9 0 1 1 12 21a9.004 9.004 0 0 1-8.648-6.5M2 10V6m0 4h4" })
     }
   )
 );

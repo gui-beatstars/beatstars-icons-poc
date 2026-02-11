@@ -24,7 +24,7 @@ module.exports = __toCommonJS(BaseIconGenderMaleIcon_exports);
 var import_jsx_runtime = require("react/jsx-runtime");
 var import_react = require("react");
 const BaseIconGenderMaleIcon = (0, import_react.forwardRef)(
-  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
     "svg",
     {
       ref,
@@ -37,7 +37,10 @@ const BaseIconGenderMaleIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinejoin: "round", strokeWidth: "2", d: "M14 4a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM9 9h6v6h-1l-1 7h-2l-1-7H9z" })
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinejoin: "round", strokeWidth: "2", d: "M14 4a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinejoin: "round", strokeWidth: "2", d: "M9 9h6v6h-1l-1 7h-2l-1-7H9z" })
+      ]
     }
   )
 );

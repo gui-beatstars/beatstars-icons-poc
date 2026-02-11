@@ -14,7 +14,7 @@ const BaseIconDropboxLogoIcon = forwardRef(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M6.1 10.07 12 6.21m-5.9 3.86L1.5 6.86 7.4 3 12 6.21m-5.9 3.86 5.9 3.86m-5.9-3.86L1.5 13.3l5.9 3.85 4.6-3.21m0-7.72 5.9 3.86M12 6.21 16.6 3l5.9 3.86-4.6 3.21M12 13.93l5.9-3.86M12 13.93l4.6 3.21 5.9-3.85-4.6-3.22m-.65 7.07v1.41L12 21l-5.25-2.45v-1.4" })
+      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M6.094 10.071 12 6.214m-5.906 3.857L1.5 6.857 7.406 3 12 6.214m-5.906 3.857L12 13.93m-5.906-3.86L1.5 13.286l5.906 3.857L12 13.929m0-7.715 5.906 3.857M12 6.214 16.594 3 22.5 6.857l-4.594 3.214M12 13.93l5.906-3.858M12 13.93l4.594 3.214 5.906-3.857-4.594-3.215m-.656 7.072v1.408L12 21l-5.25-2.449v-1.408" })
     }
   )
 );
