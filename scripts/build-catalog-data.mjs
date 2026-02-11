@@ -12,7 +12,8 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
-const SVG_DIR = path.join(ROOT, 'svg-optimized');
+const SVG_DIR_PRIMARY = path.join(ROOT, 'svg-optimized');
+const SVG_DIR_FALLBACK = path.join(ROOT, 'dist', 'svg');
 const OUTPUT_FILE = path.join(ROOT, 'web', 'catalog-data.js');
 
 function toPascalCase(str) {
@@ -74,11 +75,19 @@ function deriveTags(fileName) {
 }
 
 async function main() {
+  let SVG_DIR;
   try {
-    await fs.access(SVG_DIR);
+    await fs.access(SVG_DIR_PRIMARY);
+    SVG_DIR = SVG_DIR_PRIMARY;
   } catch {
-    console.error('❌ No svg-optimized/ directory found. Run the build pipeline first.');
-    process.exit(1);
+    try {
+      await fs.access(SVG_DIR_FALLBACK);
+      SVG_DIR = SVG_DIR_FALLBACK;
+      console.log('ℹ️  Using dist/svg/ (svg-optimized/ not found)');
+    } catch {
+      console.error('❌ No SVG directory found. Run the build pipeline first.');
+      process.exit(1);
+    }
   }
 
   const files = (await fs.readdir(SVG_DIR)).filter((f) => f.endsWith('.svg'));
