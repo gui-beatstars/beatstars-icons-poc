@@ -1,0 +1,60 @@
+{
+  "name": "@beatstars/icons",
+  "version": "1.0.0",
+  "description": "BeatStars Icon Library — auto-generated from Figma",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./icons/*": {
+      "import": "./dist/esm/icons/*.js",
+      "require": "./dist/cjs/icons/*.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "fetch": "node scripts/fetch-from-figma.mjs",
+    "optimize": "node scripts/optimize-svgs.mjs",
+    "generate": "node scripts/generate-components.mjs",
+    "build:icons": "npm run fetch && npm run optimize && npm run generate",
+    "build:lib": "node scripts/build-library.mjs",
+    "build:catalog-data": "node scripts/build-catalog-data.mjs",
+    "build": "npm run build:icons && npm run build:lib && npm run build:catalog-data",
+    "dev:catalog": "npx serve web -l 3333",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@svgr/plugin-prettier": "^8.1.0",
+    "@svgr/plugin-svgo": "^8.1.0",
+    "@types/react": "^18.0.0",
+    "esbuild": "^0.20.0",
+    "react": "^18.0.0",
+    "svgo": "^3.2.0",
+    "typescript": "^5.3.0"
+  },
+  "keywords": [
+    "icons",
+    "beatstars",
+    "react",
+    "svg",
+    "design-system"
+  ],
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beatstars/icons"
+  }
+}
