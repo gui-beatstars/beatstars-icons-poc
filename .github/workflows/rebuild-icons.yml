@@ -5,6 +5,12 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   rebuild:
@@ -32,7 +38,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dist/ src/icons/ src/index.ts src/types.ts src/createIcon.tsx
+          git add dist/ src/icons/ src/index.ts src/types.ts src/createIcon.tsx web/catalog-data.js
           if git diff --cached --quiet; then
             echo "No icon changes detected — skipping commit."
           else
@@ -43,3 +49,23 @@ jobs:
           Triggered by: ${{ github.actor }}"
             git push
           fi
+
+      # Deploy catalog directly — GITHUB_TOKEN pushes don't trigger on:push workflows
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload catalog to Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+  deploy-catalog:
+    needs: rebuild
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
