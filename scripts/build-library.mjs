@@ -27,6 +27,9 @@ async function main() {
 
   const entryPoints = [
     path.join(ROOT, 'src', 'index.ts'),
+    path.join(ROOT, 'src', 'types.ts'),
+    path.join(ROOT, 'src', 'createIcon.tsx'),
+    path.join(iconsDir, 'index.ts'),
     ...iconFiles.map((f) => path.join(iconsDir, f)),
   ];
 
