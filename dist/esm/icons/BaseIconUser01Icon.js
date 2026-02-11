@@ -1,0 +1,25 @@
+import { jsx } from "react/jsx-runtime";
+import { forwardRef } from "react";
+const BaseIconUser01Icon = forwardRef(
+  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ jsx(
+    "svg",
+    {
+      ref,
+      xmlns: "http://www.w3.org/2000/svg",
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      className,
+      style,
+      ...rest,
+      children: /* @__PURE__ */ jsx("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M1 20c0-1.4 0-2.1.17-2.66a4 4 0 0 1 2.67-2.67c.57-.17 1.26-.17 2.66-.17H10m10.5-4.93 2.23.83.14.07v.06l-.14.07-2.24.83-.03.01-.02.02-.01.03-.83 2.24-.07.14h-.06l-.07-.14-.83-2.24-.01-.03-.02-.02-.03-.01-2.24-.83-.14-.07v-.06l.14-.07 2.24-.83.03-.01.02-.02.01-.03.83-2.24.07-.14h.06l.07.14.83 2.24.01.03.02.02zm-5.02 7.45 2.96 1.1q.13.04.14.06.02.04 0 .07-.01.02-.14.07l-2.96 1.1h-.04l-.01.02-.02.04-1.1 2.96q-.04.13-.06.14h-.07q-.02-.01-.07-.14l-1.1-2.96v-.04l-.02-.01-.04-.02-2.96-1.1q-.13-.04-.14-.06v-.07q.01-.02.14-.06l2.96-1.1L13 17h0l.02-.04 1.1-2.96q.04-.13.06-.14h.07q.02.01.06.14l1.1 2.96.02.04.01.01zM13.5 6.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0" })
+    }
+  )
+);
+BaseIconUser01Icon.displayName = "BaseIconUser01Icon";
+var BaseIconUser01Icon_default = BaseIconUser01Icon;
+export {
+  BaseIconUser01Icon_default as default
+};

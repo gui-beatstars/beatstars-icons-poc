@@ -1,0 +1,25 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+const BaseIconSkipBackIcon = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', strokeWidth, className, style, ...rest }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke={color}
+      className={className}
+      style={style}
+      {...rest}
+    >
+      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v16m12.68-1.16-7.45-5.4c-.68-.49-1.03-.74-1.15-1.03q-.15-.41 0-.82c.12-.3.47-.54 1.15-1.03l7.45-5.4C17.74 4.39 18.28 4 18.72 4c.4 0 .76.16 1 .43.28.32.28.94.28 2.17v10.8c0 1.23 0 1.85-.28 2.17-.24.27-.6.43-1 .43-.45 0-.98-.39-2.04-1.16"/>
+    </svg>
+  )
+);
+
+BaseIconSkipBackIcon.displayName = 'BaseIconSkipBackIcon';
+
+export default BaseIconSkipBackIcon;

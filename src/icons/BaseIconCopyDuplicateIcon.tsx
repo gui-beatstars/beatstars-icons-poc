@@ -1,0 +1,25 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+const BaseIconCopyDuplicateIcon = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', strokeWidth, className, style, ...rest }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke={color}
+      className={className}
+      style={style}
+      {...rest}
+    >
+      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15c-.93 0-1.4 0-1.77-.15a2 2 0 0 1-1.08-1.08C2 13.4 2 12.93 2 12V5.2c0-1.12 0-1.68.22-2.1a2 2 0 0 1 .87-.88C3.52 2 4.08 2 5.2 2H12c.93 0 1.4 0 1.77.15a2 2 0 0 1 1.08 1.08C15 3.6 15 4.07 15 5m-2.8 17h6.6c1.12 0 1.68 0 2.1-.22a2 2 0 0 0 .88-.87c.22-.43.22-.99.22-2.11v-6.6c0-1.12 0-1.68-.22-2.1a2 2 0 0 0-.87-.88C20.48 9 19.92 9 18.8 9h-6.6c-1.12 0-1.68 0-2.1.22a2 2 0 0 0-.88.87C9 10.52 9 11.08 9 12.2v6.6c0 1.12 0 1.68.22 2.1q.3.58.87.88c.43.22.99.22 2.11.22"/>
+    </svg>
+  )
+);
+
+BaseIconCopyDuplicateIcon.displayName = 'BaseIconCopyDuplicateIcon';
+
+export default BaseIconCopyDuplicateIcon;

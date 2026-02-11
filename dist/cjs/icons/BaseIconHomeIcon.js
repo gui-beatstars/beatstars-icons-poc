@@ -1,0 +1,45 @@
+"use strict";
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, { get: all[name], enumerable: true });
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+var BaseIconHomeIcon_exports = {};
+__export(BaseIconHomeIcon_exports, {
+  default: () => BaseIconHomeIcon_default
+});
+module.exports = __toCommonJS(BaseIconHomeIcon_exports);
+var import_jsx_runtime = require("react/jsx-runtime");
+var import_react = require("react");
+const BaseIconHomeIcon = (0, import_react.forwardRef)(
+  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+    "svg",
+    {
+      ref,
+      xmlns: "http://www.w3.org/2000/svg",
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      className,
+      style,
+      ...rest,
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M12.98 2.76a2 2 0 0 0-.72-.46 1 1 0 0 0-.52 0c-.2.05-.37.2-.72.46L4.24 8.04c-.46.35-.68.53-.85.75a2 2 0 0 0-.32.65C3 9.7 3 9.99 3 10.57v7.23c0 1.12 0 1.68.22 2.1q.3.58.87.88c.43.22.99.22 2.11.22h2c.28 0 .42 0 .53-.05a.5.5 0 0 0 .22-.22c.05-.11.05-.25.05-.53v-6.6c0-.56 0-.84.1-1.05a1 1 0 0 1 .45-.44c.21-.11.49-.11 1.05-.11h2.8c.56 0 .84 0 1.05.1a1 1 0 0 1 .44.45c.11.21.11.49.11 1.05v6.6c0 .28 0 .42.05.53q.08.15.22.22c.11.05.25.05.53.05h2c1.12 0 1.68 0 2.1-.22a2 2 0 0 0 .88-.87c.22-.43.22-.99.22-2.11v-7.23c0-.58 0-.87-.07-1.13a2 2 0 0 0-.32-.65c-.17-.22-.4-.4-.85-.75z" })
+    }
+  )
+);
+BaseIconHomeIcon.displayName = "BaseIconHomeIcon";
+var BaseIconHomeIcon_default = BaseIconHomeIcon;

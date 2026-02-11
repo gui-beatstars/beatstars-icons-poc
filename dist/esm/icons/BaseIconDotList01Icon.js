@@ -1,0 +1,24 @@
+import { jsx } from "react/jsx-runtime";
+import { forwardRef } from "react";
+const BaseIconDotList01Icon = forwardRef(
+  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ jsx(
+    "svg",
+    {
+      ref,
+      xmlns: "http://www.w3.org/2000/svg",
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: color,
+      className,
+      style,
+      ...rest,
+      children: /* @__PURE__ */ jsx("path", { fill: "currentColor", d: "M9 5a1 1 0 0 0 0 2zm12 2a1 1 0 1 0 0-2zM9 11a1 1 0 1 0 0 2zm12 2a1 1 0 1 0 0-2zM9 17a1 1 0 1 0 0 2zm12 2a1 1 0 1 0 0-2zM4 5a1 1 0 0 0 0 2zm.02 2a1 1 0 1 0 0-2zM4 11a1 1 0 1 0 0 2zm.02 2a1 1 0 1 0 0-2zM4 17a1 1 0 1 0 0 2zm.02 2a1 1 0 1 0 0-2zM9 6v1h12V5H9zm0 6v1h12v-2H9zm0 6v1h12v-2H9zM4 6v1h.02V5H4zm1 0H4v2a2 2 0 0 0 2-2zM4 7V6H2c0 1.1.9 2 2 2zM3 6h1V4a2 2 0 0 0-2 2zm1-1v1h2a2 2 0 0 0-2-2zm0 7v1h.02v-2H4zm1 0H4v2a2 2 0 0 0 2-2zm-1 1v-1H2c0 1.1.9 2 2 2zm-1-1h1v-2a2 2 0 0 0-2 2zm1-1v1h2a2 2 0 0 0-2-2zm0 7v1h.02v-2H4zm1 0H4v2a2 2 0 0 0 2-2zm-1 1v-1H2c0 1.1.9 2 2 2zm-1-1h1v-2a2 2 0 0 0-2 2zm1-1v1h2a2 2 0 0 0-2-2z" })
+    }
+  )
+);
+BaseIconDotList01Icon.displayName = "BaseIconDotList01Icon";
+var BaseIconDotList01Icon_default = BaseIconDotList01Icon;
+export {
+  BaseIconDotList01Icon_default as default
+};

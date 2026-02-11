@@ -1,0 +1,44 @@
+"use strict";
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, { get: all[name], enumerable: true });
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+var BaseIconWalletMusicIcon_exports = {};
+__export(BaseIconWalletMusicIcon_exports, {
+  default: () => BaseIconWalletMusicIcon_default
+});
+module.exports = __toCommonJS(BaseIconWalletMusicIcon_exports);
+var import_jsx_runtime = require("react/jsx-runtime");
+var import_react = require("react");
+const BaseIconWalletMusicIcon = (0, import_react.forwardRef)(
+  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+    "svg",
+    {
+      ref,
+      xmlns: "http://www.w3.org/2000/svg",
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: color,
+      className,
+      style,
+      ...rest,
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { fill: "currentColor", d: "M13.86 8.82a1 1 0 0 0 0 2zm2.97 2a1 1 0 1 0 0-2zm-1.2 10.71.7.72zm-2.28 0-.7.72zm0-2.25-.7-.7zm8.18-1.06-.7.71zm0 2.25.7.72zm-2.28 0-.7.72zm0-2.25-.7-.7zm-4.15 2.19a1 1 0 1 0 2 0zm1.67-6.1.36.93zm3.76-1.49-.37-.93zm.47 6.53a1 1 0 1 0 2 0zM4.16 18.18l.45-.9zm-1.73-1.7.89-.46zm17.2-10.15-.45.9zm1.73 1.71.89-.46zM9.91 19.61a1 1 0 1 0 0-2zm7.9-13.7a1 1 0 1 0 2 0zm2.9 3.53a1 1 0 1 0 2-.23l-1 .12zm-6.85.38v1h2.97v-2h-2.97zm1.76 9.46-.7.71c.23.23.23.6 0 .83l.7.71.7.71a2.6 2.6 0 0 0 0-3.67zm0 2.25-.7-.7a.63.63 0 0 1-.87 0l-.7.7-.7.72c1.01 1 2.66 1 3.68 0zm-2.27 0 .7-.7a.6.6 0 0 1 0-.84l-.7-.7-.7-.72a2.6 2.6 0 0 0 0 3.68zm0-2.25.7.71a.63.63 0 0 1 .87 0l.7-.7.7-.72c-1.01-1-2.66-1-3.68 0zm8.18-1.06-.7.71c.23.23.23.6 0 .83l.7.71.7.71a2.6 2.6 0 0 0 0-3.67zm0 2.25-.7-.7a.63.63 0 0 1-.88 0l-.7.7-.7.72c1.02 1 2.66 1 3.68 0zm-2.28 0 .7-.7a.6.6 0 0 1 0-.84l-.7-.7-.7-.72a2.6 2.6 0 0 0 0 3.68zm0-2.25.7.71a.6.6 0 0 1 .88 0l.7-.7.7-.72c-1.02-1-2.66-1-3.68 0zm-3.15 2.19h1v-5.12h-2v5.12zm0-5.12h1q0-.03.03-.05l-.36-.93-.36-.93a2.1 2.1 0 0 0-1.31 1.91zm.67-.98.37.93 3.76-1.49-.37-.93-.37-.93-3.76 1.49zm3.76-1.49.37.93h.04l.05.03.01.03h2c0-1.48-1.5-2.45-2.84-1.92zm1.47.99h-1v5.54h2V13.8zM8.33 18.6v-1c-1.12 0-1.9 0-2.52-.05a3 3 0 0 1-1.2-.27l-.45.9-.45.89c.59.29 1.22.41 1.94.47q1.06.08 2.68.06zM2 12.36H1q-.02 1.6.06 2.64c.06.72.18 1.35.48 1.93l.9-.46.88-.45a3 3 0 0 1-.27-1.18C3 14.24 3 13.47 3 12.36zm2.16 5.82.45-.9c-.56-.27-1-.72-1.29-1.26l-.89.45-.89.46a5 5 0 0 0 2.17 2.15zm11.3-12.27v1c1.12 0 1.9 0 2.52.05.6.05.94.14 1.2.27l.45-.9.45-.89a5 5 0 0 0-1.94-.48q-1.05-.06-2.68-.05zm4.17.42-.45.9q.84.43 1.3 1.27l.88-.46.89-.46a5 5 0 0 0-2.17-2.14zM8.33 18.61v1h1.58v-2H8.33zM3.98 2v1h12.85V1H3.98zm0 3.9v-1A.97.97 0 0 1 3 3.96H1a2.97 2.97 0 0 0 2.98 2.96zM16.83 2v1c.55 0 .98.44.98.95h2A2.97 2.97 0 0 0 16.83 1zM3.98 2V1A2.97 2.97 0 0 0 1 3.95h2c0-.51.43-.95.98-.95zM18.8 3.95h-1v1.96h2V3.95zM2 12.35h1v-8.4H1v8.4zm1.98-6.44v1h11.48v-2H3.98zM21.7 9.33l1-.12q-.09-.89-.46-1.63l-.89.46-.89.46c.11.22.2.5.25.94z" })
+    }
+  )
+);
+BaseIconWalletMusicIcon.displayName = "BaseIconWalletMusicIcon";
+var BaseIconWalletMusicIcon_default = BaseIconWalletMusicIcon;

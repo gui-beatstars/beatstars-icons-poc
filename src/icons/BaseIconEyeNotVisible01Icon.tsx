@@ -1,0 +1,25 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+const BaseIconEyeNotVisible01Icon = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', strokeWidth, className, style, ...rest }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke={color}
+      className={className}
+      style={style}
+      {...rest}
+    >
+      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.74 5.1Q11.34 5 12 5c5.1 0 8.46 4.5 9.58 6.29.14.21.2.32.24.49.03.12.03.32 0 .44-.04.17-.1.28-.24.5-.3.47-.76 1.14-1.36 1.86M6.72 6.72a16 16 0 0 0-4.3 4.57c-.14.21-.2.32-.24.49-.03.12-.03.32 0 .44.04.17.1.28.24.5C3.55 14.5 6.9 19 12 19c2.06 0 3.83-.73 5.29-1.72M3 3l18 18M9.88 9.88A3 3 0 0 0 12 15a3 3 0 0 0 2.12-.88"/>
+    </svg>
+  )
+);
+
+BaseIconEyeNotVisible01Icon.displayName = 'BaseIconEyeNotVisible01Icon';
+
+export default BaseIconEyeNotVisible01Icon;

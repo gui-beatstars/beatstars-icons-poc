@@ -1,14 +1,9 @@
 node_modules/
-dist/
 .env
 .DS_Store
 
-# Generated files (rebuild from Figma with `npm run build`)
+# Intermediate build artifacts (rebuild from Figma with `npm run build`)
 svg-raw/
 svg-optimized/
-src/icons/
-src/index.ts
-src/types.ts
-src/createIcon.tsx
 icon-metadata.json
 web/catalog-data.js
