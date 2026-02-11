@@ -15,7 +15,7 @@ const BaseIconScanRightsIcon = forwardRef<SVGSVGElement, IconProps>(
       style={style}
       {...rest}
     >
-      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 11v3M9 6v12m9-6v1M6 10v5m9-8v10M6 3H3v3m15-3h3v3M6 21H3v-3m15 3h3v-3"/>
+      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 11v3M9 6v12m9-6v1M6 10v5m9-8v10M3 7V5a2 2 0 0 1 2-2h2m10 0h2a2 2 0 0 1 2 2v2m0 10v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/>
     </svg>
   )
 );

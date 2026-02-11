@@ -16,14 +16,14 @@ var __copyProps = (to, from, except, desc) => {
   return to;
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-var BaseIconHelpCircleIcon_exports = {};
-__export(BaseIconHelpCircleIcon_exports, {
-  default: () => BaseIconHelpCircleIcon_default
+var BaseIconPanelLeftCloseIcon_exports = {};
+__export(BaseIconPanelLeftCloseIcon_exports, {
+  default: () => BaseIconPanelLeftCloseIcon_default
 });
-module.exports = __toCommonJS(BaseIconHelpCircleIcon_exports);
+module.exports = __toCommonJS(BaseIconPanelLeftCloseIcon_exports);
 var import_jsx_runtime = require("react/jsx-runtime");
 var import_react = require("react");
-const BaseIconHelpCircleIcon = (0, import_react.forwardRef)(
+const BaseIconPanelLeftCloseIcon = (0, import_react.forwardRef)(
   ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
     "svg",
     {
@@ -37,9 +37,9 @@ const BaseIconHelpCircleIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3m-8.94 3.34a2 2 0 0 1 .1 1.17L2.02 20.8a1 1 0 0 0 1.24 1.17l3.41-1a2 2 0 0 1 1.1.1 10 10 0 1 0-4.78-4.73" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M9 3v18m7-12-3 3 3 3M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2" })
     }
   )
 );
-BaseIconHelpCircleIcon.displayName = "BaseIconHelpCircleIcon";
-var BaseIconHelpCircleIcon_default = BaseIconHelpCircleIcon;
+BaseIconPanelLeftCloseIcon.displayName = "BaseIconPanelLeftCloseIcon";
+var BaseIconPanelLeftCloseIcon_default = BaseIconPanelLeftCloseIcon;

@@ -15,7 +15,7 @@ const BaseIconExclamationIcon = forwardRef<SVGSVGElement, IconProps>(
       style={style}
       {...rest}
     >
-      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0"/>
+      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m10 0a10 10 0 1 0-20 0 10 10 0 0 0 20 0"/>
     </svg>
   )
 );

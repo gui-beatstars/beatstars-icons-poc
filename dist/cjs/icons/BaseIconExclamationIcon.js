@@ -37,7 +37,7 @@ const BaseIconExclamationIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M12 8v4M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M12 8v4m10 0a10 10 0 1 0-20 0 10 10 0 0 0 20 0" })
     }
   )
 );
