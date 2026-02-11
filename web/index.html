@@ -100,6 +100,27 @@
       font-weight: 400;
     }
 
+    /* Nav */
+    .nav {
+      display: flex;
+      gap: 4px;
+    }
+
+    .nav a {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 14px;
+      border-radius: calc(var(--radius) - 4px);
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted-foreground);
+      text-decoration: none;
+      transition: color 0.15s, background 0.15s;
+    }
+
+    .nav a:hover { color: var(--foreground); background: var(--secondary); }
+    .nav a.active { color: var(--foreground); background: var(--secondary); }
+
     /* Search — shadcn Input style */
     .search-wrapper {
       flex: 1;
@@ -523,6 +544,11 @@
         </div>
         <div class="logo-text">BeatStars <span>Icons</span></div>
       </a>
+
+      <nav class="nav">
+        <a href="index.html" class="active">Icons</a>
+        <a href="deploy.html">Deploy</a>
+      </nav>
 
       <div class="search-wrapper">
         <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
