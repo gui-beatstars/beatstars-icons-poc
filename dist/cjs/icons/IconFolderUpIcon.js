@@ -16,14 +16,14 @@ var __copyProps = (to, from, except, desc) => {
   return to;
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-var IconFolderDownIcon_exports = {};
-__export(IconFolderDownIcon_exports, {
-  default: () => IconFolderDownIcon_default
+var IconFolderUpIcon_exports = {};
+__export(IconFolderUpIcon_exports, {
+  default: () => IconFolderUpIcon_default
 });
-module.exports = __toCommonJS(IconFolderDownIcon_exports);
+module.exports = __toCommonJS(IconFolderUpIcon_exports);
 var import_jsx_runtime = require("react/jsx-runtime");
 var import_react = require("react");
-const IconFolderDownIcon = (0, import_react.forwardRef)(
+const IconFolderUpIcon = (0, import_react.forwardRef)(
   ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
     "svg",
     {
@@ -37,9 +37,9 @@ const IconFolderDownIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "m13 7-1.116-2.231c-.32-.642-.481-.963-.72-1.198a2 2 0 0 0-.748-.462C10.1 3 9.74 3 9.022 3H5.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C2 4.52 2 5.08 2 6.2V7m0 0h15.2c1.68 0 2.52 0 3.162.327a3 3 0 0 1 1.311 1.311C22 9.28 22 10.12 22 11.8v2.45M2 7v9.2c0 1.68 0 2.52.327 3.162a3 3 0 0 0 1.311 1.311C4.28 21 5.12 21 6.8 21H15m1-3 3 3m3-3-3 3m0 0v-5.5" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "m13 7-1.116-2.231c-.32-.642-.481-.963-.72-1.198a2 2 0 0 0-.748-.462C10.1 3 9.74 3 9.022 3H5.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C2 4.52 2 5.08 2 6.2V7m0 0h15.2c1.68 0 2.52 0 3.162.327a3 3 0 0 1 1.311 1.311C22 9.28 22 10.12 22 11.8v2.45M2 7v9.2c0 1.68 0 2.52.327 3.162a3 3 0 0 0 1.311 1.311C4.28 21 5.12 21 6.8 21H15m1-2.5 3-3m3 3-3-3m0 0V21" })
     }
   )
 );
-IconFolderDownIcon.displayName = "IconFolderDownIcon";
-var IconFolderDownIcon_default = IconFolderDownIcon;
+IconFolderUpIcon.displayName = "IconFolderUpIcon";
+var IconFolderUpIcon_default = IconFolderUpIcon;

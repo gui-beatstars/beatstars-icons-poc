@@ -105,6 +105,7 @@ export { default as IconFlagReportIcon } from './IconFlagReportIcon';
 export { default as IconFolderDefaultIcon } from './IconFolderDefaultIcon';
 export { default as IconFolderDownIcon } from './IconFolderDownIcon';
 export { default as IconFolderPlusIcon } from './IconFolderPlusIcon';
+export { default as IconFolderUpIcon } from './IconFolderUpIcon';
 export { default as IconFolderZipIcon } from './IconFolderZipIcon';
 export { default as IconGamepad01Icon } from './IconGamepad01Icon';
 export { default as IconGauge01Icon } from './IconGauge01Icon';

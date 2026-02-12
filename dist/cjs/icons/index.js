@@ -135,6 +135,7 @@ __export(icons_exports, {
   IconFolderDefaultIcon: () => import_IconFolderDefaultIcon.default,
   IconFolderDownIcon: () => import_IconFolderDownIcon.default,
   IconFolderPlusIcon: () => import_IconFolderPlusIcon.default,
+  IconFolderUpIcon: () => import_IconFolderUpIcon.default,
   IconFolderZipIcon: () => import_IconFolderZipIcon.default,
   IconGamepad01Icon: () => import_IconGamepad01Icon.default,
   IconGauge01Icon: () => import_IconGauge01Icon.default,
@@ -435,6 +436,7 @@ var import_IconFlagReportIcon = __toESM(require("./IconFlagReportIcon"));
 var import_IconFolderDefaultIcon = __toESM(require("./IconFolderDefaultIcon"));
 var import_IconFolderDownIcon = __toESM(require("./IconFolderDownIcon"));
 var import_IconFolderPlusIcon = __toESM(require("./IconFolderPlusIcon"));
+var import_IconFolderUpIcon = __toESM(require("./IconFolderUpIcon"));
 var import_IconFolderZipIcon = __toESM(require("./IconFolderZipIcon"));
 var import_IconGamepad01Icon = __toESM(require("./IconGamepad01Icon"));
 var import_IconGauge01Icon = __toESM(require("./IconGauge01Icon"));

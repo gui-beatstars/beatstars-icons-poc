@@ -1,6 +1,6 @@
 // Auto-generated catalog data — do not edit manually
-// Generated at: 2026-02-12T16:34:41.459Z
-// Total icons: 298
+// Generated at: 2026-02-12T17:03:25.510Z
+// Total icons: 299
 
 window.BEATSTARS_ICONS = [
   {
@@ -1491,7 +1491,7 @@ window.BEATSTARS_ICONS = [
       "file",
       "storage"
     ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m13 7-1.116-2.231c-.32-.642-.481-.963-.72-1.198a2 2 0 0 0-.748-.462C10.1 3 9.74 3 9.022 3H5.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C2 4.52 2 5.08 2 6.2V7m11 0H2m11 0h4.2c1.68 0 2.52 0 3.162.327a3 3 0 0 1 1.311 1.311C22 9.28 22 10.12 22 11.8v4.4c0 1.68 0 2.52-.327 3.162a3 3 0 0 1-1.311 1.311C19.72 21 18.88 21 17.2 21H6.8c-1.68 0-2.52 0-3.162-.327a3 3 0 0 1-1.311-1.311C2 18.72 2 17.88 2 16.2V7m10.91 6h-1.82c-.97 0-1.454 0-1.678.192a.8.8 0 0 0-.278.67c.023.295.366.638 1.051 1.323l.91.91c.317.317.475.475.658.535a.8.8 0 0 0 .494 0c.183-.06.341-.218.658-.535l.91-.91c.685-.685 1.028-1.028 1.051-1.322a.8.8 0 0 0-.278-.671C14.364 13 13.88 13 12.91 13\"/></svg>",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m13 7-1.116-2.231c-.32-.642-.481-.963-.72-1.198a2 2 0 0 0-.748-.462C10.1 3 9.74 3 9.022 3H5.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C2 4.52 2 5.08 2 6.2V7m0 0h15.2c1.68 0 2.52 0 3.162.327a3 3 0 0 1 1.311 1.311C22 9.28 22 10.12 22 11.8v2.45M2 7v9.2c0 1.68 0 2.52.327 3.162a3 3 0 0 0 1.311 1.311C4.28 21 5.12 21 6.8 21H15m1-3 3 3m3-3-3 3m0 0v-5.5\"/></svg>",
     "importStatement": "import { IconFolderDownIcon } from '@beatstars/icons';",
     "jsxUsage": "<IconFolderDownIcon size={24} />"
   },
@@ -1507,9 +1507,25 @@ window.BEATSTARS_ICONS = [
       "file",
       "storage"
     ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m13 7-1.116-2.231c-.32-.642-.481-.963-.72-1.198a2 2 0 0 0-.748-.462C10.1 3 9.74 3 9.022 3H5.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C2 4.52 2 5.08 2 6.2V7m0 0h15.2c1.68 0 2.52 0 3.162.327a3 3 0 0 1 1.311 1.311C22 9.28 22 10.12 22 11.8v4.4c0 1.68 0 2.52-.327 3.162a3 3 0 0 1-1.311 1.311C19.72 21 18.88 21 17.2 21H6.8c-1.68 0-2.52 0-3.162-.327a3 3 0 0 1-1.311-1.311C2 18.72 2 17.88 2 16.2zm10 10v-6m-3 3h6\"/></svg>",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m13 7-1.116-2.231c-.32-.642-.481-.963-.72-1.198a2 2 0 0 0-.748-.462C10.1 3 9.74 3 9.022 3H5.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C2 4.52 2 5.08 2 6.2V7m0 0h15.2c1.68 0 2.52 0 3.162.327a3 3 0 0 1 1.311 1.311C22 9.28 22 10.12 22 11.8v2.45M2 7v9.2c0 1.68 0 2.52.327 3.162a3 3 0 0 0 1.311 1.311C4.28 21 5.12 21 6.8 21H15m4 0v-6m-3 3h6\"/></svg>",
     "importStatement": "import { IconFolderPlusIcon } from '@beatstars/icons';",
     "jsxUsage": "<IconFolderPlusIcon size={24} />"
+  },
+  {
+    "name": "IconFolderUpIcon",
+    "fileName": "icon-folder-up",
+    "kebab": "icon-folder-up",
+    "tags": [
+      "icon",
+      "folder",
+      "up",
+      "directory",
+      "file",
+      "storage"
+    ],
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m13 7-1.116-2.231c-.32-.642-.481-.963-.72-1.198a2 2 0 0 0-.748-.462C10.1 3 9.74 3 9.022 3H5.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C2 4.52 2 5.08 2 6.2V7m0 0h15.2c1.68 0 2.52 0 3.162.327a3 3 0 0 1 1.311 1.311C22 9.28 22 10.12 22 11.8v2.45M2 7v9.2c0 1.68 0 2.52.327 3.162a3 3 0 0 0 1.311 1.311C4.28 21 5.12 21 6.8 21H15m1-2.5 3-3m3 3-3-3m0 0V21\"/></svg>",
+    "importStatement": "import { IconFolderUpIcon } from '@beatstars/icons';",
+    "jsxUsage": "<IconFolderUpIcon size={24} />"
   },
   {
     "name": "IconFolderZipIcon",
@@ -1809,7 +1825,7 @@ window.BEATSTARS_ICONS = [
       "hammer",
       "01"
     ],
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M21.004 21.004h-10.59m-.79-11.518L3.696 14.5a1.987 1.987 0 1 0 2.755 2.852l5.236-5.766m3.422-4.289 2.2 1.756a1.836 1.836 0 0 1 .157 2.727l-1.677 1.685a1.815 1.815 0 0 1-2.701-.143l-1.777-2.207a9.2 9.2 0 0 0-1.42-1.417L7.69 7.943a1.836 1.836 0 0 1-.157-2.727l1.674-1.684a1.815 1.815 0 0 1 2.701.144l1.779 2.206c.42.523.897.998 1.422 1.416\"/></svg>",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M21.004 21.004h-10.59m-.79-11.518-5.927 5.015a1.987 1.987 0 1 0 2.755 2.852l5.236-5.766m3.422-4.289 2.2 1.756a1.836 1.836 0 0 1 .157 2.727l-1.677 1.685a1.814 1.814 0 0 1-2.701-.143l-1.777-2.207a9.2 9.2 0 0 0-1.42-1.417L7.69 7.943a1.836 1.836 0 0 1-.156-2.727l1.674-1.683a1.815 1.815 0 0 1 2.701.143l1.779 2.206c.42.523.897.998 1.422 1.416\"/></svg>",
     "importStatement": "import { IconHammer01Icon } from '@beatstars/icons';",
     "jsxUsage": "<IconHammer01Icon size={24} />"
   },
