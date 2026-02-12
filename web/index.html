@@ -506,8 +506,8 @@
       border-color: var(--muted-foreground);
     }
 
-    .modal-nav.prev { left: max(12px, calc(50% - 320px)); }
-    .modal-nav.next { right: max(12px, calc(50% - 320px)); }
+    .modal-nav.prev { left: max(12px, calc(50% - 336px)); }
+    .modal-nav.next { right: max(12px, calc(50% - 336px)); }
 
     @media (max-width: 768px) {
       .modal-nav.prev { left: 6px; }
@@ -561,19 +561,44 @@
       margin-top: 4px;
     }
 
-    /* Icon preview — centered */
+    /* Icon preview — multi-size with dot grid */
     .detail-preview {
       width: 100%;
-      height: 176px;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
-      background: var(--secondary);
+      gap: 20px;
+      padding: 24px 16px 20px;
+      background:
+        radial-gradient(circle, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 8px 8px;
       border: 1px solid var(--border);
       border-radius: var(--radius);
+      flex-wrap: wrap;
     }
 
     .detail-preview svg { color: var(--foreground); }
+
+    .size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .size-item-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 64px;
+    }
+
+    .size-item-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--muted-foreground);
+      opacity: 0.6;
+    }
 
     /* Sections */
     .modal-section {
@@ -588,42 +613,6 @@
       color: var(--muted-foreground);
       text-transform: uppercase;
       letter-spacing: 0.05em;
-    }
-
-    .size-options {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-
-    .size-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      height: 32px;
-      padding: 0 12px;
-      border-radius: calc(var(--radius) - 4px);
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: background 0.15s, border-color 0.15s, color 0.15s;
-      border: 1px solid var(--input);
-      background: transparent;
-      color: var(--muted-foreground);
-      white-space: nowrap;
-    }
-
-    .size-btn:hover {
-      background: var(--secondary);
-      border-color: var(--muted-foreground);
-      color: var(--foreground);
-    }
-
-    .size-btn.active {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: var(--accent-foreground);
     }
 
     /* Code block */
@@ -807,7 +796,7 @@
       .grid { grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); }
       .modal { width: 95vw; }
       .modal-inner { padding: 20px; }
-      .detail-preview { height: 120px; }
+      .detail-preview { gap: 12px; padding: 16px 12px 14px; }
       .icon-count { display: none; }
       .logo-text { display: none; }
     }
@@ -918,18 +907,6 @@
         </div>
         <div class="detail-preview" id="detail-preview"></div>
         <div class="modal-section">
-          <div class="detail-section-label">Size</div>
-          <div class="size-options" id="size-options">
-            <button class="size-btn" data-size="8">8px</button>
-            <button class="size-btn" data-size="12">12px</button>
-            <button class="size-btn" data-size="16">16px</button>
-            <button class="size-btn active" data-size="24">24px</button>
-            <button class="size-btn" data-size="32">32px</button>
-            <button class="size-btn" data-size="40">40px</button>
-            <button class="size-btn" data-size="64">64px</button>
-          </div>
-        </div>
-        <div class="modal-section">
           <div class="detail-section-label">Import</div>
           <div class="detail-code" id="detail-import" title="Click to copy import"></div>
         </div>
@@ -970,7 +947,7 @@
     let icons = window.BEATSTARS_ICONS || [];
     let filteredIcons = [...icons];
     let selectedIcon = null;
-    let selectedSize = 24;
+    const previewSizes = [12, 16, 24, 32, 40, 64];
     let activeCategory = 'All';
     let activeStyle = 'all';
     let activeSort = 'a-z';
@@ -988,7 +965,6 @@
     const detailImport = document.getElementById('detail-import');
     const detailUsage = document.getElementById('detail-usage');
     const detailClose = document.getElementById('detail-close');
-    const sizeOptions = document.getElementById('size-options');
     const btnCopySvg = document.getElementById('btn-copy-svg');
     const btnCopyImport = document.getElementById('btn-copy-import');
     const navPrev = document.getElementById('nav-prev');
@@ -1154,31 +1130,22 @@
       renderGrid();
     }
 
-    function updatePreviewSize(size) {
-      selectedSize = size;
-      if (!selectedIcon) return;
-      detailPreview.innerHTML = scaleSvg(selectedIcon.svg, 96);
-      const usageText = `<${selectedIcon.name} size={${size}} />`;
-      detailUsage.textContent = usageText;
-      detailUsage.onclick = () => copyText(usageText, detailUsage);
-      sizeOptions.querySelectorAll('.size-btn').forEach(btn => {
-        btn.classList.toggle('active', Number(btn.dataset.size) === size);
-      });
-    }
-
     function openDetail() {
       if (!selectedIcon) return;
-      detailPreview.innerHTML = scaleSvg(selectedIcon.svg, 96);
+      // Render all sizes in preview
+      detailPreview.innerHTML = previewSizes.map(size => `
+        <div class="size-item">
+          <div class="size-item-icon">${scaleSvg(selectedIcon.svg, size)}</div>
+          <span class="size-item-label">${size}</span>
+        </div>
+      `).join('');
       detailName.textContent = selectedIcon.kebab;
       detailTags.textContent = [selectedIcon.category, ...selectedIcon.tags].join(' \u2022 ');
       detailImport.textContent = selectedIcon.importStatement;
       detailImport.onclick = () => copyText(selectedIcon.importStatement, detailImport);
-      const usageText = `<${selectedIcon.name} size={${selectedSize}} />`;
+      const usageText = `<${selectedIcon.name} size={24} />`;
       detailUsage.textContent = usageText;
       detailUsage.onclick = () => copyText(usageText, detailUsage);
-      sizeOptions.querySelectorAll('.size-btn').forEach(btn => {
-        btn.classList.toggle('active', Number(btn.dataset.size) === selectedSize);
-      });
       modalOverlay.classList.add('open');
     }
 
@@ -1208,13 +1175,6 @@
     // Close on backdrop click
     modalOverlay.addEventListener('click', (e) => {
       if (e.target === modalOverlay) closeDetail();
-    });
-
-    // ---- Size selector ----
-    sizeOptions.addEventListener('click', (e) => {
-      const btn = e.target.closest('.size-btn');
-      if (!btn) return;
-      updatePreviewSize(Number(btn.dataset.size));
     });
 
     // ---- Copy ----
