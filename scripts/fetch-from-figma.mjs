@@ -163,7 +163,7 @@ async function main() {
   console.log('📥 Requesting SVG exports from Figma API...');
 
   const imagesData = await figmaApi(
-    `/images/${FIGMA_FILE_KEY}?ids=${encodeURIComponent(nodeIds)}&format=svg&svg_include_id=false&svg_simplify_stroke=true`
+    `/images/${FIGMA_FILE_KEY}?ids=${encodeURIComponent(nodeIds)}&format=svg&svg_include_id=false&svg_simplify_stroke=false`
   );
 
   if (imagesData.err) {

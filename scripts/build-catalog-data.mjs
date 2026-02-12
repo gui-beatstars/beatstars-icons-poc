@@ -76,12 +76,30 @@ function deriveTags(fileName) {
 
 /**
  * Auto-detect icon style from SVG content.
+ *
+ * Note: Some Figma components export with outlined (filled) strokes even though
+ * they appear as stroke icons in Figma. These are detected by the presence of
+ * fill="currentColor" *without* any stroke attributes, combined with very large
+ * path data (> 500 chars) — a hallmark of expanded/outlined strokes.
+ * We mark these as 'stroke' since that's their intended design.
  */
 function detectStyle(svgContent) {
   const hasFill = /fill="currentColor"/.test(svgContent);
   const hasStroke = /stroke="currentColor"/.test(svgContent);
+
   if (hasFill && hasStroke) return 'mixed';
-  if (hasFill) return 'fill';
+
+  if (hasFill && !hasStroke) {
+    // Check if this is an outlined stroke (Figma export artifact).
+    // Outlined strokes produce enormous path data (> 500 chars) because the
+    // stroke geometry is expanded into filled shapes.
+    const pathMatch = svgContent.match(/<path[^>]*\bd="([^"]*)"/);
+    if (pathMatch && pathMatch[1].length > 500) {
+      return 'stroke'; // Outlined stroke — treat as stroke icon
+    }
+    return 'fill';
+  }
+
   return 'stroke';
 }
 
