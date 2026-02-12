@@ -31,7 +31,7 @@ function toKebabCase(str) {
  * Derive searchable tags from the icon name.
  */
 function deriveTags(fileName) {
-  const parts = fileName.split('-');
+  const parts = fileName.replace(/^icon-/, '').split('-');
   const tags = [...parts];
 
   // Add common aliases
@@ -74,6 +74,65 @@ function deriveTags(fileName) {
   return [...new Set(tags)];
 }
 
+/**
+ * Auto-detect icon style from SVG content.
+ */
+function detectStyle(svgContent) {
+  const hasFill = /fill="currentColor"/.test(svgContent);
+  const hasStroke = /stroke="currentColor"/.test(svgContent);
+  if (hasFill && hasStroke) return 'mixed';
+  if (hasFill) return 'fill';
+  return 'stroke';
+}
+
+/**
+ * Derive a category from the icon filename.
+ * Maps icons into logical groups based on name patterns.
+ */
+function deriveCategory(fileName) {
+  const name = fileName.replace(/^icon-/, '');
+
+  // Category rules — order matters (first match wins)
+  const rules = [
+    // Navigation & Arrows
+    { pattern: /^arrow|^chevron|^navigate/, category: 'Arrows' },
+    // Media & Audio
+    { pattern: /play|pause|skip|shuffle|repeat|loop|volume|speaker|mic|headphone|music|note|lyric|bpm|sound|queue|tracklist|playlist|radio|airplay|cast|midi|keyboard/, category: 'Media & Audio' },
+    // User & Account
+    { pattern: /^user|^login|^logout|membership|collaborat|invite|gender/, category: 'Users' },
+    // Commerce & Finance
+    { pattern: /cart|bag|shop|currency|dollar|bitcoin|ethereum|euro|pound|ruble|rupee|yen|wallet|payout|sale|credit|bank|transaction|chargeback|pix|coins/, category: 'Commerce' },
+    // Communication
+    { pattern: /message|email|send|reply|repost|megaphone|bell|notification/, category: 'Communication' },
+    // Files & Documents
+    { pattern: /file|document|doc|folder|attachment|paperclip|note-paper/, category: 'Files' },
+    // Editing & Tools
+    { pattern: /edit|pen|copy|replace|sliders|filter|sort|reorder|hammer|broom|paint|scan|scale/, category: 'Editing' },
+    // Layout & UI
+    { pattern: /grid|panel|menu|maximize|minimize|toggle|list|embed|text|type|ratio|mirror|layers/, category: 'Layout' },
+    // Devices
+    { pattern: /device|laptop|phone|desktop|tv|printer|gamepad|video-recorder/, category: 'Devices' },
+    // Social & Branding
+    { pattern: /heart|star|thumbs|share|like|repost|hashtag|canva|dropbox|google|voloco|git-box/, category: 'Social & Brands' },
+    // Time
+    { pattern: /clock|calendar|hourglass|alarm/, category: 'Time' },
+    // Security
+    { pattern: /lock|unlock|shield|key|fingerprint|blocked|eye/, category: 'Security' },
+    // Status & Alerts
+    { pattern: /check|close|minus|plus|error|warning|exclamation|info|help|loading|refresh|reload/, category: 'Status' },
+    // Maps & Location
+    { pattern: /map|pin|marer|globe|compass|target/, category: 'Location' },
+    // Misc / General
+    { pattern: /search|home|settings|power|rocket|diamond|gift|trophy|lemon|cookie|halloween|snowflake|moon|sun|drop|chip|flag|tag|link|life|bulb|feed|telescope|similar|promote|percent|graph|gauge|bar-chart|image|camera|video-stream|signal|cloud|disk|distro|merch|exclusive|services|save|download|upload|zoom|rotate|scan-rights|my-content/, category: 'General' },
+  ];
+
+  for (const { pattern, category } of rules) {
+    if (pattern.test(name)) return category;
+  }
+
+  return 'General';
+}
+
 async function main() {
   let SVG_DIR;
   try {
@@ -111,6 +170,8 @@ async function main() {
       fileName,
       kebab: toKebabCase(componentName.replace(/Icon$/, '')),
       tags: deriveTags(fileName),
+      category: deriveCategory(fileName),
+      style: detectStyle(svgContent),
       svg: svgContent,
       importStatement: `import { ${componentName} } from '@beatstars/icons';`,
       jsxUsage: `<${componentName} size={24} />`,
