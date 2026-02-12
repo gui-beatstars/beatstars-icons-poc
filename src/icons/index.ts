@@ -93,6 +93,7 @@ export { default as IconEyeNotVisible01Icon } from './IconEyeNotVisible01Icon';
 export { default as IconEyeVisible01Icon } from './IconEyeVisible01Icon';
 export { default as IconFaceSmileIcon } from './IconFaceSmileIcon';
 export { default as IconFeedIcon } from './IconFeedIcon';
+export { default as IconFigmaIcon } from './IconFigmaIcon';
 export { default as IconFileAttachment01Icon } from './IconFileAttachment01Icon';
 export { default as IconFileCheckIcon } from './IconFileCheckIcon';
 export { default as IconFileDawIcon } from './IconFileDawIcon';

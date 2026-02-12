@@ -123,6 +123,7 @@ __export(icons_exports, {
   IconEyeVisible01Icon: () => import_IconEyeVisible01Icon.default,
   IconFaceSmileIcon: () => import_IconFaceSmileIcon.default,
   IconFeedIcon: () => import_IconFeedIcon.default,
+  IconFigmaIcon: () => import_IconFigmaIcon.default,
   IconFileAttachment01Icon: () => import_IconFileAttachment01Icon.default,
   IconFileCheckIcon: () => import_IconFileCheckIcon.default,
   IconFileDawIcon: () => import_IconFileDawIcon.default,
@@ -422,6 +423,7 @@ var import_IconEyeNotVisible01Icon = __toESM(require("./IconEyeNotVisible01Icon"
 var import_IconEyeVisible01Icon = __toESM(require("./IconEyeVisible01Icon"));
 var import_IconFaceSmileIcon = __toESM(require("./IconFaceSmileIcon"));
 var import_IconFeedIcon = __toESM(require("./IconFeedIcon"));
+var import_IconFigmaIcon = __toESM(require("./IconFigmaIcon"));
 var import_IconFileAttachment01Icon = __toESM(require("./IconFileAttachment01Icon"));
 var import_IconFileCheckIcon = __toESM(require("./IconFileCheckIcon"));
 var import_IconFileDawIcon = __toESM(require("./IconFileDawIcon"));
