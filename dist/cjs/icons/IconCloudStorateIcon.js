@@ -37,7 +37,7 @@ const IconCloudStorateIcon = (0, import_react.forwardRef)(
       className,
       style,
       ...rest,
-      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M10 19H6.5a4.5 4.5 0 0 1-.42-8.98A6.002 6.002 0 0 1 17 7.681m-1.158 10.483v-5.782a.99.99 0 0 1 .595-.92l4.264-1.39c.622-.262 1.299.218 1.299.92v6.179m-6.574.286a1.54 1.54 0 0 1 0 2.106 1.375 1.375 0 0 1-2.01 0 1.54 1.54 0 0 1 0-2.106 1.376 1.376 0 0 1 2.01 0m6.158-.993a1.54 1.54 0 0 1 0 2.106 1.375 1.375 0 0 1-2.01 0 1.54 1.54 0 0 1 0-2.106 1.376 1.376 0 0 1 2.01 0" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M10.642 18.35H6.97c-2.607 0-4.72-2.046-4.72-4.572 0-2.381 1.88-4.337 4.28-4.553.49-2.893 3.084-5.1 6.21-5.1 2.19 0 4.117 1.083 5.245 2.725m3.765 3.88-3.372-1.143v8.002m-.658-1.617c.878.893.878 2.34 0 3.233a2.22 2.22 0 0 1-3.18 0 2.314 2.314 0 0 1 0-3.233 2.22 2.22 0 0 1 3.18 0" })
     }
   )
 );
