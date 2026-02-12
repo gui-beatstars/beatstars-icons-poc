@@ -1,0 +1,25 @@
+import { forwardRef } from 'react';
+import type { IconProps } from '../types';
+
+const IconPaperclip02Icon = forwardRef<SVGSVGElement, IconProps>(
+  ({ size = 24, color = 'currentColor', strokeWidth, className, style, ...rest }, ref) => (
+    <svg
+      ref={ref}
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke={color}
+      className={className}
+      style={style}
+      {...rest}
+    >
+      <g clipPath="url(#clip0_8753_2333)"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m10.474 5.965.027 11.508c-.004.508.194.993.55 1.35a1.9 1.9 0 0 0 1.35.55c.509-.004.997-.21 1.36-.571.361-.362.567-.85.57-1.359l-.027-11.508a3.77 3.77 0 0 0-1.1-2.7 3.77 3.77 0 0 0-2.7-1.1 3.9 3.9 0 0 0-2.717 1.143 3.9 3.9 0 0 0-1.142 2.716l.027 11.461c-.012.759.127 1.51.407 2.21a5.63 5.63 0 0 0 3.087 3.112 5.7 5.7 0 0 0 2.206.425 5.8 5.8 0 0 0 2.213-.459 5.87 5.87 0 0 0 3.135-3.16 5.8 5.8 0 0 0 .441-2.217l-.027-11.46"/></g>
+    </svg>
+  )
+);
+
+IconPaperclip02Icon.displayName = 'IconPaperclip02Icon';
+
+export default IconPaperclip02Icon;

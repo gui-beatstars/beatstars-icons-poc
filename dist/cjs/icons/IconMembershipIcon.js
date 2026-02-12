@@ -1,0 +1,45 @@
+"use strict";
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, { get: all[name], enumerable: true });
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+var IconMembershipIcon_exports = {};
+__export(IconMembershipIcon_exports, {
+  default: () => IconMembershipIcon_default
+});
+module.exports = __toCommonJS(IconMembershipIcon_exports);
+var import_jsx_runtime = require("react/jsx-runtime");
+var import_react = require("react");
+const IconMembershipIcon = (0, import_react.forwardRef)(
+  ({ size = 24, color = "currentColor", strokeWidth, className, style, ...rest }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+    "svg",
+    {
+      ref,
+      xmlns: "http://www.w3.org/2000/svg",
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: color,
+      className,
+      style,
+      ...rest,
+      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M6.5 20H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-1.5M12 19a3 3 0 1 0 0-6 3 3 0 0 0 0 6m0 0h.021L8.83 22.193 6 19.364l3.02-3.02M12 19l3.193 3.193 2.828-2.829-3.02-3.02M9 6h6M7 9.5h10" })
+    }
+  )
+);
+IconMembershipIcon.displayName = "IconMembershipIcon";
+var IconMembershipIcon_default = IconMembershipIcon;

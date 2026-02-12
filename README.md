@@ -1,22 +1,29 @@
 # @beatstars/icons
 
-BeatStars icon library — auto-generated from Figma, consumed like Lucide.
+Auto-generated React icon library from Figma. Tree-shakeable, typed, themeable.
 
-## Quick Start (for devs consuming icons)
+**Live catalog:** [gui-beatstars.github.io/beatstars-icons-poc](https://gui-beatstars.github.io/beatstars-icons-poc/)
+
+## Install
 
 ```bash
+# From GitHub (current setup)
+npm install github:gui-beatstars/beatstars-icons-poc
+
+# From npm (when published)
 npm install @beatstars/icons
 ```
 
+## Usage
+
 ```tsx
-import { PlayIcon, BeatIcon, TrackIcon } from '@beatstars/icons';
+import { BaseIconPlayIcon, BaseIconSearchIcon } from '@beatstars/icons';
 
 function Player() {
   return (
     <div>
-      <PlayIcon size={24} color="currentColor" />
-      <BeatIcon size={32} color="#FF5500" />
-      <TrackIcon size={16} />
+      <BaseIconPlayIcon size={24} />
+      <BaseIconSearchIcon size={32} color="#C32D2D" />
     </div>
   );
 }
@@ -24,35 +31,49 @@ function Player() {
 
 ### Props
 
-Every icon component accepts these props (plus all standard SVG attributes):
+Every icon accepts these props (plus all standard `<svg>` attributes):
 
-| Prop          | Type               | Default          | Description                    |
-|---------------|--------------------|------------------|--------------------------------|
-| `size`        | `number \| string` | `24`             | Width and height in pixels     |
-| `color`       | `string`           | `'currentColor'` | Icon color (any CSS color)     |
-| `strokeWidth` | `number \| string` | SVG default      | Stroke width for line icons    |
-| `className`   | `string`           | —                | CSS class name                 |
-| `style`       | `CSSProperties`    | —                | Inline styles                  |
+| Prop          | Type               | Default          | Description                |
+|---------------|--------------------|------------------|----------------------------|
+| `size`        | `number \| string` | `24`             | Width and height in pixels |
+| `color`       | `string`           | `'currentColor'` | Icon color (any CSS color) |
+| `strokeWidth` | `number \| string` | SVG default      | Stroke width for line icons|
+| `className`   | `string`           | —                | CSS class name             |
+| `style`       | `CSSProperties`    | —                | Inline styles              |
 
-Icons also accept a `ref` (forwarded to the `<svg>` element).
+All icons forward `ref` to the underlying `<svg>` element.
 
 ### Tree Shaking
 
-The library is tree-shakeable. Only the icons you import get bundled.
+Only the icons you import end up in your bundle:
 
 ```tsx
-// ✅ Only PlayIcon ends up in your bundle
-import { PlayIcon } from '@beatstars/icons';
+// Named import (recommended)
+import { BaseIconPlayIcon } from '@beatstars/icons';
 
-// ✅ Also works — direct import for maximum tree-shaking
-import PlayIcon from '@beatstars/icons/dist/esm/icons/PlayIcon';
+// Direct import
+import BaseIconPlayIcon from '@beatstars/icons/dist/esm/icons/BaseIconPlayIcon';
 ```
+
+### Both stroke and fill icons are supported
+
+The pipeline auto-detects whether an icon is stroke-based (outline) or fill-based (solid) and sets the correct SVG attributes. The `color` prop works for both.
 
 ---
 
-## Browsing Icons
+## Icon Catalog
 
-Run the local catalog to search and preview all available icons:
+Browse, search, and copy icons from the live catalog:
+
+**[gui-beatstars.github.io/beatstars-icons-poc](https://gui-beatstars.github.io/beatstars-icons-poc/)**
+
+The catalog supports:
+- Search by name or tags
+- Click an icon to see import/usage code
+- Size preview (8px–64px)
+- Keyboard shortcuts: `←` `→` navigate, `C` copy SVG, `Esc` close, `/` search
+
+Or run locally:
 
 ```bash
 npm run dev:catalog
@@ -61,122 +82,116 @@ npm run dev:catalog
 
 ---
 
-## How It Works (for maintainers)
+## Pipeline
 
-The entire library is auto-generated from a Figma file through this pipeline:
+Icons flow from Figma to production through this automated pipeline:
 
 ```
-Figma Components → Figma API → Raw SVGs → SVGO → React Components → npm package
+Figma → Figma API → Raw SVGs → SVGO Optimization → React/TS Components → ESM/CJS Bundles
 ```
 
-### Pipeline Steps
+### Steps
 
-1. **`npm run fetch`** — Pulls SVGs from Figma via the REST API
-2. **`npm run optimize`** — Cleans and optimizes SVGs with SVGO
-3. **`npm run generate`** — Converts SVGs to React/TypeScript components
-4. **`npm run build:lib`** — Bundles for ESM + CJS distribution
-5. **`npm run build:catalog-data`** — Builds the icon catalog web page data
+| Step | Command | What it does |
+|------|---------|-------------|
+| 1 | `npm run fetch` | Pulls SVGs from Figma via REST API |
+| 2 | `npm run optimize` | Cleans and optimizes with SVGO |
+| 3 | `npm run generate` | Converts to React/TypeScript components |
+| 4 | `npm run build:lib` | Bundles ESM + CJS + TypeScript declarations |
+| 5 | `npm run build:catalog-data` | Generates catalog page data |
+| **All** | **`npm run build`** | **Runs steps 1–5 in sequence** |
 
-Or run everything at once:
+### SVGO Optimization
+
+The optimizer (`scripts/optimize-svgs.mjs`) handles:
+- Removing Figma metadata and cruft
+- Normalizing colors to `currentColor` for theming (white fills → `none`, all others → `currentColor`)
+- Path optimization with float precision 3 (preserves dots on `!`, `?`, `i` icons)
+- `mergePaths` is intentionally disabled to preserve micro-segments
+
+---
+
+## Designer Workflow
+
+Designers can trigger icon rebuilds directly from the browser — no CLI needed.
+
+### Deploy Dashboard
+
+**[gui-beatstars.github.io/beatstars-icons-poc/deploy.html](https://gui-beatstars.github.io/beatstars-icons-poc/deploy.html)**
+
+1. Enter a GitHub Personal Access Token (with `repo` + `workflow` scopes)
+2. Click **Trigger Rebuild**
+3. Watch the pipeline progress in real-time
+4. Once complete, the icon catalog and library are automatically updated
+
+### What happens behind the scenes
+
+The deploy dashboard triggers the **Rebuild Icons** GitHub Actions workflow (`rebuild-icons.yml`), which:
+
+1. Fetches latest icons from Figma
+2. Optimizes SVGs
+3. Generates React components
+4. Builds ESM/CJS bundles
+5. Commits updated `dist/`, `src/`, and `web/catalog-data.js` to `main`
+6. Deploys the catalog to GitHub Pages
+
+### Figma Requirements
+
+For the pipeline to pick up your icons:
+
+- Icons must be **Figma Components** (not plain groups or frames)
+- All icons must be inside the **target frame** (configured via `FIGMA_ICON_FRAME_ID`)
+- Component Sets (variants) are supported — each variant becomes a separate icon
+- Component names become filenames (e.g. `icon-play-circle` → `icon-play-circle.svg` → `IconPlayCircleIcon`)
+
+---
+
+## GitHub Actions
+
+### `rebuild-icons.yml`
+
+Triggered via `workflow_dispatch` (from the deploy dashboard or GitHub Actions UI).
+
+Runs the full pipeline, commits changes to `main`, and deploys the catalog to GitHub Pages.
+
+Required repository secrets:
+- `FIGMA_TOKEN` — Figma Personal Access Token
+- `FIGMA_FILE_KEY` — File key from the Figma URL
+- `FIGMA_ICON_FRAME_ID` — Node ID of the frame containing icons
+
+### `deploy-catalog.yml`
+
+Triggered on every push to `main`. Builds the catalog data from `dist/svg/` and deploys `web/` to GitHub Pages.
+
+---
+
+## Local Setup
+
+1. Clone the repo and install dependencies:
 
 ```bash
-npm run build
+git clone https://github.com/gui-beatstars/beatstars-icons-poc.git
+cd beatstars-icons-poc
+npm install
 ```
 
-### Initial Setup
-
-1. Copy `.env.example` to `.env` and fill in your values:
+2. Create a `.env` file with your Figma credentials:
 
 ```bash
 cp .env.example .env
 ```
 
-2. You need three values:
-   - **`FIGMA_TOKEN`** — Your Figma Personal Access Token ([get one here](https://www.figma.com/developers/api#access-tokens))
-   - **`FIGMA_FILE_KEY`** — The key from your Figma file URL (e.g. `figma.com/design/THIS_PART/...`)
-   - **`FIGMA_ICON_FRAME_ID`** — The node ID of the frame containing your icons. Select it in Figma → right-click → "Copy link" → grab the `node-id` parameter
+```env
+FIGMA_TOKEN=your-figma-personal-access-token
+FIGMA_FILE_KEY=your-figma-file-key
+FIGMA_ICON_FRAME_ID=123:456
+```
 
-3. Install dependencies and build:
+3. Build everything:
 
 ```bash
-npm install
 npm run build
 ```
-
-### Figma File Structure
-
-For the fetch script to work, your Figma icons should be:
-
-- **Figma Components** (not plain groups or frames) — the script looks for component nodes
-- **Inside a single parent frame** — this is what `FIGMA_ICON_FRAME_ID` points to
-- **Optionally organized in Component Sets** (variants) — the script handles these too
-
-Recommended naming convention in Figma:
-```
-icon/play
-icon/pause
-icon/beat-maker
-icon/track-list
-```
-
-### Updating Icons
-
-When designers update icons in Figma:
-
-```bash
-npm run build    # Re-fetches from Figma and rebuilds everything
-npm version patch
-npm publish
-```
-
-Or set up CI to do this automatically (see below).
-
-### CI/CD Automation (Optional)
-
-You can automate the whole pipeline with GitHub Actions:
-
-```yaml
-# .github/workflows/publish-icons.yml
-name: Publish Icons
-on:
-  workflow_dispatch:     # Manual trigger
-  schedule:
-    - cron: '0 9 * * 1' # Weekly on Monday
-
-jobs:
-  publish:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          registry-url: https://npm.pkg.github.com  # or https://registry.npmjs.org
-      - run: npm ci
-      - run: npm run build
-        env:
-          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
-          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
-          FIGMA_ICON_FRAME_ID: ${{ secrets.FIGMA_ICON_FRAME_ID }}
-      - run: |
-          git diff --quiet || (
-            npm version patch --no-git-tag-version
-            git config user.name "github-actions"
-            git config user.email "actions@github.com"
-            git add -A
-            git commit -m "chore: update icons from Figma"
-            git push
-            npm publish
-          )
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-```
-
-This will:
-- Run weekly (or on manual trigger)
-- Fetch latest icons from Figma
-- Only publish if icons actually changed
-- Auto-bump the patch version
 
 ---
 
@@ -185,23 +200,33 @@ This will:
 ```
 @beatstars/icons/
 ├── scripts/
-│   ├── fetch-from-figma.mjs      # Step 1: Pull SVGs from Figma API
-│   ├── optimize-svgs.mjs         # Step 2: Clean SVGs with SVGO
-│   ├── generate-components.mjs   # Step 3: Generate React components
-│   ├── build-library.mjs         # Step 4: Bundle for distribution
-│   └── build-catalog-data.mjs    # Step 5: Build catalog page data
-├── svg-raw/                       # Raw SVGs from Figma (gitignored)
-├── svg-optimized/                 # Optimized SVGs (gitignored)
-├── src/
-│   ├── icons/                     # Generated icon components (gitignored)
-│   ├── types.ts                   # TypeScript types
-│   ├── createIcon.tsx             # Icon factory utility
-│   └── index.ts                   # Package entry point
+│   ├── fetch-from-figma.mjs        # Pull SVGs from Figma API
+│   ├── optimize-svgs.mjs           # Clean/optimize SVGs with SVGO
+│   ├── generate-components.mjs     # Generate React/TS icon components
+│   ├── build-library.mjs           # Bundle ESM + CJS + types
+│   ├── build-catalog-data.mjs      # Build catalog page data
+│   └── load-env.mjs                # Load .env for local dev
+├── .github/workflows/
+│   ├── rebuild-icons.yml            # Full pipeline + deploy (workflow_dispatch)
+│   └── deploy-catalog.yml           # Deploy catalog on push to main
 ├── web/
-│   ├── index.html                 # Icon catalog web page
-│   └── catalog-data.js            # Generated catalog data
-├── dist/                          # Built library (gitignored)
-├── .env.example                   # Environment variable template
+│   ├── index.html                   # Icon catalog (GitHub Pages)
+│   ├── deploy.html                  # Designer deploy dashboard
+│   └── catalog-data.js              # Generated catalog data (committed)
+├── src/
+│   ├── icons/                       # Generated icon components (committed)
+│   ├── index.ts                     # Package entry point
+│   ├── types.ts                     # TypeScript types (IconProps)
+│   └── createIcon.tsx               # Icon factory utility
+├── dist/                            # Built library (committed for GitHub installs)
+│   ├── esm/                         # ES modules
+│   ├── cjs/                         # CommonJS
+│   ├── types/                       # TypeScript declarations
+│   └── svg/                         # Optimized SVGs
+├── svg-raw/                         # Raw SVGs from Figma (gitignored)
+├── svg-optimized/                   # SVGO output (gitignored)
+├── test-app/                        # Vite + React test app
+├── .env.example                     # Environment variable template
 ├── package.json
 ├── tsconfig.json
 └── README.md
