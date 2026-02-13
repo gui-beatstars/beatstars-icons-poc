@@ -1,5 +1,5 @@
 // Auto-generated catalog data — do not edit manually
-// Generated at: 2026-02-12T22:05:40.181Z
+// Generated at: 2026-02-13T15:50:01.902Z
 // Total icons: 299
 
 window.BEATSTARS_ICONS = [
